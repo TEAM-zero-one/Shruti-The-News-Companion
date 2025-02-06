@@ -1,9 +1,8 @@
+from transformers import BartForConditionalGeneration, BartTokenizer
 import re
-import torch
+from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk import download
 from typing import List, Optional
-from nltk.tokenize import sent_tokenize, word_tokenize
-from transformers import BartForConditionalGeneration, BartTokenizer
 
 MODEL_NAME = "facebook/bart-large-cnn"
 tokenizer = BartTokenizer.from_pretrained(MODEL_NAME)
@@ -48,6 +47,54 @@ def summarize_chunk(chunk: str, **generate_kwargs) -> str:
         print(f"Error summarizing chunk: {str(e)}")
         return ""
     
+def fix_punctuation(text: str) -> str:
+    """
+    Fix stray punctuation such as a comma immediately followed by a period or vice versa.
+    """
+    # Remove comma followed by period (and any spaces in between)
+    text = re.sub(r",\s*\.", ".", text)
+    # Remove period followed by comma
+    text = re.sub(r"\.\s*,", ".", text)
+    # Optionally, collapse multiple spaces into one
+    text = re.sub(r"\s{2,}", " ", text)
+    return text.strip()
+
+
+def truncate_summary(full_summary, max_summary_length):
+    if len(full_summary) <= max_summary_length:
+        return full_summary.strip()
+    
+    sentences = sent_tokenize(full_summary)
+    truncated = []
+    current_length = 0
+    
+    for sent in sentences:
+        # Determine the extra space needed: if truncated is not empty, add 1 for the space.
+        spacer = 1 if truncated else 0  
+        l = len(sent)
+        if current_length + spacer + l <= max_summary_length:
+            truncated.append(sent)
+            current_length += spacer + l
+        else:
+            # If nothing has been added yet, just add the sentence regardless.
+            if not truncated:
+                truncated.append(sent)
+            else:
+                # Option 1: Do not add the sentence.
+                diff_without = max_summary_length - current_length
+                # Option 2: Add the full sentence.
+                new_length_with = current_length + spacer + l
+                diff_with = new_length_with - max_summary_length
+                # Choose the option that gets closer to max_summary_length.
+                if abs(diff_with) < abs(diff_without):
+                    truncated.append(sent)
+                    current_length = new_length_with
+            break
+                
+    return ' '.join(truncated).strip()
+
+
+
 def text_summarizer(
     text: str,
     min_len: Optional[int] = None,
@@ -103,24 +150,9 @@ def text_summarizer(
         for sent in sent_tokenize(' '.join(summaries))
         if sent.strip()
     )
-    max_summary_length = max_summary_length if max_summary_length > final_max else final_max
+
     # Enforce hard length limit with sentence preservation
-    if len(full_summary) > max_summary_length:
-        sentences = sent_tokenize(full_summary)
-        truncated = []
-        current_length = 0
-        
-        for sent in sentences:
-            l = len(sent)
-            if current_length + l + 1 <= max_summary_length:
-                truncated.append(sent)
-                current_length += l + 1
-            else:
-                remaining = max_summary_length - current_length
-                if remaining > 25:  # Only add partial sentence if meaningful
-                    truncated.append(sent[:remaining].rsplit(' ', 1)[0] + '...')
-                break
-                
-        full_summary = ' '.join(truncated)
-    
+
+    full_summary = truncate_summary(full_summary, max_summary_length)
+    full_summary = fix_punctuation(full_summary)
     return full_summary.strip()
