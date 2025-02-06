@@ -1,7 +1,11 @@
+import os
+import sys
 import numpy as np
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
+keywords_path = os.path.abspath(os.path.join(os.getcwd(), '.')) + '/keyword_dataset'
+sys.path.append(keywords_path)
 from keyword_extractor_functions import extract_keywords_from_text
 
 
