@@ -16,7 +16,7 @@ def categorize_articles(domain_links, category_keywords_dict):
         'India': [],
         'World': [],
         'Business': [],
-        'Technology': [],
+        'Tech': [],
         'Sports': []
     }
 
