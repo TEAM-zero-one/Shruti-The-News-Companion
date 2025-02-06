@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from bs4 import BeautifulSoup
-from gensum import text_summarizer
+from news_summarizer import text_summarizer
 from collect import categorize_articles
 from pathlib import Path
 from newspaper import Article
