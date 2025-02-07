@@ -1,6 +1,7 @@
 import os
 import sys
 import pandas as pd
+import pickle
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
