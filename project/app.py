@@ -1,74 +1,253 @@
-
 import streamlit as st
 import pandas as pd
-import time
 from gtts import gTTS
 import os
 from pathlib import Path
-from news_summarizer import text_summarizer  # Import summarization function
-from nltk.tokenize import word_tokenize, sent_tokenize  # Assuming these are imported somewhere
-from QnA import answers  # Import the QA function
-from text_to_speech import generate_audio
+import tempfile
+from news_summarizer import text_summarizer
+from QnA import answers
 
+# Configuration
 st.set_page_config(layout="wide")
-vidno = 0
+AUDIO_TEMP_DIR = tempfile.TemporaryDirectory()  # For safe audio file handling
 
+# UI Styles
+st.markdown("""
+    <style>
+        .main-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .category-button {
+            background-color: #007BFF;
+            color: white;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            width: 180px;
+            transition: all 0.3s ease;
+        }
+        .category-button:hover {
+            background-color: #0056b3;
+        }
+        .summary-box {
+            padding: 20px;
+            background-color: #f0f2f6;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
-
-st.markdown("<h1 class='main-title'>📰 Shruti - Your AI-Powered News Summarizer 🤖</h1>", unsafe_allow_html=True)
-
-# Define CSV file paths for each category
-csv_folder = Path(__file__).resolve().parent  # Get the directory of the script
-category_csv_files = {
-    'India': csv_folder / 'data/india.csv',
-    'World': csv_folder / 'data/world.csv',
-    'Business': csv_folder / 'data/business.csv',
-    'Technology': csv_folder / 'data/tech.csv',
-    'Sports': csv_folder / 'data/sports.csv'
+# Initialize Session State
+SESSION_DEFAULTS = {
+    "selected_category": None,
+    "filters": {},
+    "show_filters": False,
+    "summary": None,
+    "question": "",
+    "answer": None,
+    "audio_files": set()
 }
 
-if "selected_category" not in st.session_state:
-    st.session_state["selected_category"] = None
+for key, value in SESSION_DEFAULTS.items():
+    if key not in st.session_state:
+        st.session_state[key] = value
 
-cols = st.columns(len(category_csv_files))
-for i, (category, file_path) in enumerate(category_csv_files.items()):
-    if cols[i].button(f"{category} 🌍", key=f"btn_{category}"):
-        st.session_state["selected_category"] = category
+# File Path Configuration
+def get_csv_paths():
+    """Return configured CSV file paths for news categories"""
+    csv_folder = Path(__file__).resolve().parent
+    return {
+        'India': csv_folder / 'data/india.csv',
+        'World': csv_folder / 'data/world.csv',
+        'Business': csv_folder / 'data/business.csv',
+        'Technology': csv_folder / 'data/tech.csv',
+        'Sports': csv_folder / 'data/sports.csv'
+    }
 
-selected_category = st.session_state["selected_category"]
+# Audio Handling Utilities
+def create_audio(text: str) -> str:
+    """Generate and save audio file from text using gTTS"""
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False, dir=AUDIO_TEMP_DIR.name) as fp:
+            tts = gTTS(text, lang='en', tld='co.uk')
+            tts.save(fp.name)
+            return fp.name
+    except Exception as e:
+        st.error(f"Audio generation failed: {str(e)}")
+        return None
 
-if selected_category:
-    st.write(f"## {selected_category} 📰")
-    csv_file = category_csv_files[selected_category]
-    df = pd.read_csv(csv_file)
+def clean_audio_files():
+    """Clean up generated audio files"""
+    for fpath in st.session_state.audio_files:
+        try:
+            if os.path.exists(fpath):
+                os.remove(fpath)
+        except Exception as e:
+            st.error(f"Error cleaning audio files: {str(e)}")
+    st.session_state.audio_files = set()
 
-    for i in range(min(50, len(df))):
-        article_title = df.iloc[i]['Article Title']
-        article_summary = df.iloc[i]['Article Summary']
-        article_link = df.iloc[i]['Article Link']
-        article_image = df.iloc[i]['Article Image']
+# UI Components
+def render_category_selector():
+    """Render category selection buttons"""
+    st.markdown("<h1 class='main-title'>📰 Shruti - Your AI-Powered News Summarizer 🤖</h1>", unsafe_allow_html=True)
+    st.markdown("<div class='category-container'>", unsafe_allow_html=True)
+    
+    cols = st.columns(len(category_csv_files) + 1)
+    for i, category in enumerate(category_csv_files):
+        if cols[i].button(category, key=f"btn_{category}"):
+            st.session_state.selected_category = category
+            clean_audio_files()  # Clear previous audio files on category change
+    
+    if cols[-1].button("Generate Summary", key="btn_generate_summary_category"):
+        st.session_state.selected_category = "Generate Summary"
+        clean_audio_files()
+    
+    st.markdown("</div>", unsafe_allow_html=True)
+
+def render_news_article(article_data, idx):
+    """Render individual news article with Q&A"""
+    col1, col2 = st.columns([1, 3])
+    
+    with col1:
+        st.image(article_data['Article Image'], width=250)
+        st.write(f"[Read Full Article]({article_data['Article Link']})")
+    
+    with col2:
+        st.write(f"### {article_data['Article Title']}")
+        st.write(article_data['Article Summary'])
         
-        if all(isinstance(field, str) and field.strip() for field in [article_title, article_summary, article_link, article_image]):
-            col1, col2 = st.columns([1, 3])
-            with col1:
-                st.image(article_image, width=250)
-                st.write(f"🔗 [Read Full Article]({article_link})")
-            with col2:
-                st.write(f"### 🗞 {article_title}")
-                st.write(f"📝 {article_summary}")
-                
-                question = st.text_input(f"🤔 Ask a question about this article (Q{i})", "")
-                if question.strip():
-                    answer = answers(article_summary, question)
-                    st.write("**💡 Answer:**", answer)
-                
-                convert_button_key = f"convert_button_{i}"
-                if st.button("🔊 Convert to Audio", key=convert_button_key):
-                    audio_filename = f"{vidno}_summary_audio.mp3"
-                    vidno += 1
-                    tts = gTTS(article_summary, lang='en-uk')
-                    tts.save(audio_filename)
-                    st.audio(audio_filename, format='audio/mp3')
-                    os.remove(audio_filename)
-            
-            st.markdown("<div class='separator'></div>", unsafe_allow_html=True)
+        # Audio Conversion
+        if st.button("Convert to Audio", key=f"convert_{idx}"):
+            audio_path = create_audio(article_data['Article Summary'])
+            if audio_path:
+                st.session_state.audio_files.add(audio_path)
+                st.audio(audio_path, format='audio/mp3')
+        
+        # Q&A Section
+        with st.expander("Ask a question about this news article"):
+            user_question = st.text_input("Your question:", key=f"qna_{idx}")
+            if st.button("Get Answer", key=f"answer_{idx}"):
+                if user_question.strip():
+                    with st.spinner("Analyzing..."):
+                        answer = answers(article_data['Article Summary'], user_question)
+                        st.success(f"**Answer:** {answer}")
+                else:
+                    st.warning("Please enter a question.")
+
+# Main App Logic
+category_csv_files = get_csv_paths()
+render_category_selector()
+selected_category = st.session_state.selected_category
+
+# Home Page
+if not selected_category:
+    st.write("## Welcome to Shruti!")
+    st.write("### Explore the latest news, summarize content, or ask AI your questions!")
+    st.image("https://your-image-link.com/image.jpg", use_container_width=True)
+
+# News Category Pages
+elif selected_category != "Generate Summary":
+    st.write(f"## {selected_category}")
+    df = pd.read_csv(category_csv_files[selected_category])
+    
+    for idx in range(min(50, len(df))):
+        article_data = df.iloc[idx]
+        if all(isinstance(article_data[field], str) and article_data[field].strip() 
+               for field in ['Article Title', 'Article Summary', 'Article Link', 'Article Image']):
+            render_news_article(article_data, idx)
+
+# Custom Summary Page
+else:
+    st.write("## Generate a Custom Summary")
+    
+    # Input Section
+    user_input = st.text_area("Enter text to summarize:", key="user_input", 
+                             on_change=lambda: st.session_state.update({"summary": None, "answer": None}))
+    
+    # Advanced Settings
+    if st.button("Toggle Advanced Settings", key="btn_advanced"):
+        st.session_state.show_filters = not st.session_state.show_filters
+    
+    if st.session_state.show_filters:
+        col1, col2 = st.columns(2)
+        with col1:
+            min_length = st.slider("Minimum Length", 30, 500, 50)
+            max_length = st.slider("Maximum Length", 50, 1000, 150)
+            quality_level = st.slider("Quality Level", 1, 8, 4)
+        with col2:
+            detail_level = st.slider("Detail Level", 0.5, 3.0, 2.0, 0.1)
+            repetition_control = st.slider("Repetition Control", 1.0, 2.5, 1.2, 0.1)
+        
+        st.session_state.filters = {
+            "min_len": min_length,
+            "max_len": max_length,
+            "quality_level": quality_level,
+            "detail_level": detail_level,
+            "repetition_control": repetition_control
+    }
+    
+    # Summary Generation
+    if st.button("Generate Summary", key="btn_generate"):
+        if user_input.strip():
+            with st.spinner("Analyzing text..."):
+                summary = text_summarizer(user_input, **st.session_state.filters)
+                st.session_state.summary = summary
+                st.session_state.answer = None
+        else:
+            st.warning("Please enter text to summarize")
+    
+    # Display Summary
+    if st.session_state.summary:
+        st.markdown("<div class='summary-box'>", unsafe_allow_html=True)
+        st.write("### Generated Summary:")
+        st.success(st.session_state.summary)
+        
+        # Audio Conversion
+        audio_path = create_audio(st.session_state.summary)
+        if audio_path:
+            st.session_state.audio_files.add(audio_path)
+            st.audio(audio_path)
+        
+        # Q&A Section
+        st.write("### Ask a Question")
+        user_question = st.text_input("Your question:", key="summary_question", 
+                                     value=st.session_state.question)
+        
+        if st.button("Get Answer"):
+            if user_input.strip() and user_question.strip():
+                with st.spinner("Finding answer..."):
+                    answer = answers(user_input, user_question)
+                    st.session_state.answer = answer
+            else:
+                st.warning("Please enter both text and question")
+        
+        if st.session_state.answer:
+            st.success(f"**Answer:** {st.session_state.answer}")
+        
+        st.markdown("</div>", unsafe_allow_html=True)
+
+# Footer
+st.markdown("""
+<p style='font-size: small; color: grey; text-align: center;'>
+A NLP project. <a href='https://github.com/TEAM-zero-one/Shruti-The-News-Companion'>GitHub Link</a>.
+Disclaimer: Educational use only. Web scraping without authorization is not endorsed.
+</p>
+""", unsafe_allow_html=True)
+
+# Cleanup when done
+AUDIO_TEMP_DIR.cleanup()
