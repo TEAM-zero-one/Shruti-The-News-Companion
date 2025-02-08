@@ -1,17 +1,18 @@
+       
 import streamlit as st
 import pandas as pd
-from gtts import gTTS
 import os
-from pathlib import Path
 import tempfile
-from news_summarizer import text_summarizer
-from QnA import answers
+from gtts import gTTS
+from pathlib import Path
+from news_summarizer import text_summarizer  # Import summarization function
+from QnA import answers  # Import the QA function
 
 # Configuration
 st.set_page_config(layout="wide")
 AUDIO_TEMP_DIR = tempfile.TemporaryDirectory()  # For safe audio file handling
 
-# UI Styles
+# UI Styling
 st.markdown("""
     <style>
         .main-title {
@@ -20,28 +21,10 @@ st.markdown("""
             font-weight: bold;
             color: #333;
         }
-        .category-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        .category-button {
-            background-color: #007BFF;
-            color: white;
-            border-radius: 8px;
-            padding: 12px 24px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            text-align: center;
-            display: inline-block;
-            width: 180px;
-            transition: all 0.3s ease;
-        }
-        .category-button:hover {
-            background-color: #0056b3;
+        .separator {
+            height: 2px;
+            background-color: #ddd;
+            margin: 20px 0;
         }
         .summary-box {
             padding: 20px;
@@ -53,19 +36,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Initialize Session State
-SESSION_DEFAULTS = {
-    "selected_category": None,
-    "filters": {},
-    "show_filters": False,
-    "summary": None,
-    "question": "",
-    "answer": None,
-    "audio_files": set()
-}
-
-for key, value in SESSION_DEFAULTS.items():
-    if key not in st.session_state:
-        st.session_state[key] = value
+if "selected_category" not in st.session_state:
+    st.session_state["selected_category"] = None
+if "audio_files" not in st.session_state:
+    st.session_state["audio_files"] = set()
 
 # File Path Configuration
 def get_csv_paths():
@@ -78,6 +52,7 @@ def get_csv_paths():
         'Technology': csv_folder / 'data/tech.csv',
         'Sports': csv_folder / 'data/sports.csv'
     }
+category_csv_files = get_csv_paths()
 
 # Audio Handling Utilities
 def create_audio(text: str) -> str:
@@ -102,142 +77,84 @@ def clean_audio_files():
     st.session_state.audio_files = set()
 
 # UI Components
-def render_category_selector():
-    """Render category selection buttons"""
-    st.markdown("<h1 class='main-title'>📰 Shruti - Your AI-Powered News Summarizer 🤖</h1>", unsafe_allow_html=True)
-    st.markdown("<div class='category-container'>", unsafe_allow_html=True)
-    
-    cols = st.columns(len(category_csv_files) + 1)
-    for i, category in enumerate(category_csv_files):
-        if cols[i].button(category, key=f"btn_{category}"):
-            st.session_state.selected_category = category
-            clean_audio_files()  # Clear previous audio files on category change
-    
-    if cols[-1].button("Generate Summary", key="btn_generate_summary_category"):
-        st.session_state.selected_category = "Generate Summary"
+st.markdown("<h1 class='main-title'>📰 Shruti - Your AI-Powered News Summarizer 🤖</h1>", unsafe_allow_html=True)
+
+cols = st.columns(len(category_csv_files) + 1)
+for i, (category, file_path) in enumerate(category_csv_files.items()):
+    if cols[i].button(f"{category}", key=f"btn_{category}"):
+        st.session_state["selected_category"] = category
         clean_audio_files()
-    
-    st.markdown("</div>", unsafe_allow_html=True)
 
-def render_news_article(article_data, idx):
-    """Render individual news article with Q&A"""
-    col1, col2 = st.columns([1, 3])
-    
-    with col1:
-        st.image(article_data['Article Image'], width=250)
-        st.write(f"[Read Full Article]({article_data['Article Link']})")
-    
-    with col2:
-        st.write(f"### {article_data['Article Title']}")
-        st.write(article_data['Article Summary'])
-        
-        # Audio Conversion
-        if st.button("Convert to Audio", key=f"convert_{idx}"):
-            audio_path = create_audio(article_data['Article Summary'])
-            if audio_path:
-                st.session_state.audio_files.add(audio_path)
-                st.audio(audio_path, format='audio/mp3')
-        
-        # Q&A Section
-        with st.expander("Ask a question about this news article"):
-            user_question = st.text_input("Your question:", key=f"qna_{idx}")
-            if st.button("Get Answer", key=f"answer_{idx}"):
-                if user_question.strip():
-                    with st.spinner("Analyzing..."):
-                        answer = answers(article_data['Article Summary'], user_question)
-                        st.success(f"**Answer:** {answer}")
-                else:
-                    st.warning("Please enter a question.")
+if cols[-1].button("Generate Summary", key="btn_generate_summary_category"):
+    st.session_state["selected_category"] = "Generate Summary"
+    clean_audio_files()
 
-# Main App Logic
-category_csv_files = get_csv_paths()
-render_category_selector()
-selected_category = st.session_state.selected_category
+selected_category = st.session_state["selected_category"]
 
-# Home Page
-if not selected_category:
-    st.write("## Welcome to Shruti!")
-    st.write("### Explore the latest news, summarize content, or ask AI your questions!")
-    st.image("https://your-image-link.com/image.jpg", use_container_width=True)
-
-# News Category Pages
-elif selected_category != "Generate Summary":
-    st.write(f"## {selected_category}")
+if selected_category and selected_category != "Generate Summary":
+    st.write(f"## {selected_category} 📰")
     df = pd.read_csv(category_csv_files[selected_category])
     
-    for idx in range(min(50, len(df))):
-        article_data = df.iloc[idx]
-        if all(isinstance(article_data[field], str) and article_data[field].strip() 
-               for field in ['Article Title', 'Article Summary', 'Article Link', 'Article Image']):
-            render_news_article(article_data, idx)
+    for i in range(min(50, len(df))):
+        article_title = df.iloc[i]['Article Title']
+        article_summary = df.iloc[i]['Article Summary']
+        article_link = df.iloc[i]['Article Link']
+        article_image = df.iloc[i]['Article Image']
+        
+        if all(isinstance(field, str) and field.strip() for field in [article_title, article_summary, article_link, article_image]):
+            col1, col2 = st.columns([1, 3])
+            with col1:
+                st.image(article_image, width=250)
+                st.write(f"🔗 [Read Full Article]({article_link})")
+            with col2:
+                st.write(f"### 🗞 {article_title}")
+                st.write(f"📝 {article_summary}")
+                
+                question = st.text_input(f"🤔 Ask a question about this article (Q{i})", "")
+                if question.strip():
+                    answer = answers(article_summary, question)
+                    st.write("**💡 Answer:**", answer)
+                
+                if st.button("🔊 Convert to Audio", key=f"convert_button_{i}"):
+                    audio_path = create_audio(article_summary)
+                    if audio_path:
+                        st.session_state.audio_files.add(audio_path)
+                        st.audio(audio_path, format='audio/mp3')
+
+            st.markdown("<div class='separator'></div>", unsafe_allow_html=True)
 
 # Custom Summary Page
-else:
+elif selected_category == "Generate Summary":
     st.write("## Generate a Custom Summary")
     
-    # Input Section
-    user_input = st.text_area("Enter text to summarize:", key="user_input", 
-                             on_change=lambda: st.session_state.update({"summary": None, "answer": None}))
+    user_input = st.text_area("Enter text to summarize:", key="user_input")
     
-    # Advanced Settings
-    if st.button("Toggle Advanced Settings", key="btn_advanced"):
-        st.session_state.show_filters = not st.session_state.show_filters
-    
-    if st.session_state.show_filters:
-        col1, col2 = st.columns(2)
-        with col1:
-            min_length = st.slider("Minimum Length", 30, 500, 50)
-            max_length = st.slider("Maximum Length", 50, 1000, 150)
-            quality_level = st.slider("Quality Level", 1, 8, 4)
-        with col2:
-            detail_level = st.slider("Detail Level", 0.5, 3.0, 2.0, 0.1)
-            repetition_control = st.slider("Repetition Control", 1.0, 2.5, 1.2, 0.1)
-        
-        st.session_state.filters = {
-            "min_len": min_length,
-            "max_len": max_length,
-            "quality_level": quality_level,
-            "detail_level": detail_level,
-            "repetition_control": repetition_control
-    }
-    
-    # Summary Generation
     if st.button("Generate Summary", key="btn_generate"):
         if user_input.strip():
             with st.spinner("Analyzing text..."):
-                summary = text_summarizer(user_input, **st.session_state.filters)
-                st.session_state.summary = summary
-                st.session_state.answer = None
+                summary = text_summarizer(user_input)
+                st.session_state["summary"] = summary
         else:
             st.warning("Please enter text to summarize")
     
-    # Display Summary
-    if st.session_state.summary:
+    if "summary" in st.session_state and st.session_state["summary"]:
         st.markdown("<div class='summary-box'>", unsafe_allow_html=True)
         st.write("### Generated Summary:")
-        st.success(st.session_state.summary)
+        st.success(st.session_state["summary"])
         
-        # Audio Conversion
-        audio_path = create_audio(st.session_state.summary)
+        audio_path = create_audio(st.session_state["summary"])
         if audio_path:
             st.session_state.audio_files.add(audio_path)
-            st.audio(audio_path)
+            st.audio(audio_path, format='audio/mp3')
         
-        # Q&A Section
-        st.write("### Ask a Question")
-        user_question = st.text_input("Your question:", key="summary_question", 
-                                     value=st.session_state.question)
-        
+        question = st.text_input("Your question about this summary:", key="summary_question")
         if st.button("Get Answer"):
-            if user_input.strip() and user_question.strip():
+            if question.strip():
                 with st.spinner("Finding answer..."):
-                    answer = answers(user_input, user_question)
-                    st.session_state.answer = answer
+                    answer = answers(user_input, question)
+                    st.success(f"**Answer:** {answer}")
             else:
-                st.warning("Please enter both text and question")
-        
-        if st.session_state.answer:
-            st.success(f"**Answer:** {st.session_state.answer}")
+                st.warning("Please enter a question")
         
         st.markdown("</div>", unsafe_allow_html=True)
 
@@ -249,5 +166,4 @@ Disclaimer: Educational use only. Web scraping without authorization is not endo
 </p>
 """, unsafe_allow_html=True)
 
-# Cleanup when done
 AUDIO_TEMP_DIR.cleanup()
