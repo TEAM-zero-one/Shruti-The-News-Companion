@@ -58,7 +58,7 @@ def categorize_articles(all_links):
                         continue  # Move to the next article
 
     # 4. Use dictionary comprehension to initialize the domain lists
-    domain_lists = {category: [] for category in ['India', 'World', 'Business', 'Technology', 'Sports']}
+    domain_lists = {category: [] for category in ['India', 'World', 'Business', 'Tech', 'Sports']}
     
     # Organize the articles based on their classified domain
     for article_data in visited_links.values():
