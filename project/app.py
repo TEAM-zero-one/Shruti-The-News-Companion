@@ -77,7 +77,7 @@ def clean_audio_files():
     st.session_state.audio_files = set()
 
 # UI Components
-st.markdown("<h1 class='main-title'>📰 Shruti - Your AI-Powered News Summarizer 🤖</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-title'>📰 Shruti - The NEWS Companion 🤖</h1>", unsafe_allow_html=True)
 
 cols = st.columns(len(category_csv_files) + 1)
 for i, (category, file_path) in enumerate(category_csv_files.items()):

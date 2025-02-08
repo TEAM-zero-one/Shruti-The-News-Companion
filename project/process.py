@@ -53,7 +53,7 @@ info_files = {
     "India": csv_folder / 'data/india.csv',
     "World": csv_folder / 'data/world.csv',
     "Business": csv_folder / 'data/business.csv',
-    "Technology": csv_folder / 'data/tech.csv',
+    "Tech": csv_folder / 'data/tech.csv',
     "Sports": csv_folder / 'data/sports.csv'
 }
 
