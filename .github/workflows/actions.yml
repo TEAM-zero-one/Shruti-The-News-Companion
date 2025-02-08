@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    env:
+      PYTHONIOENCODING: utf-8  # Set the encoding for Python output
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
