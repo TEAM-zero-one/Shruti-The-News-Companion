@@ -4,6 +4,7 @@ on:
   schedule:
     # Run newday.py every day.
     - cron: '30 02 * * *'
+  workflow_dispatch:
     
 
 jobs:
