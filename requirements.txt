@@ -1,0 +1,22 @@
+# Web Scraping & HTML Processing
+beautifulsoup4==4.12.3
+newspaper3k==0.2.8
+requests==2.31.0
+lxml==5.2.1
+lxml_html_clean==0.1.1
+
+# NLP & Text Processing
+textblob==0.17.1
+nltk==3.8.1
+transformers==4.39.3  # Includes DistilBERT
+gTTS==2.5.1
+
+# Machine Learning & Data Processing
+scikit-learn==1.6.1.post1
+pandas==2.1.1
+torch==2.2.0  # Required for DistilBERT
+torchvision==0.17.0
+torchaudio==2.2.0
+
+# Deployment & UI
+streamlit==1.33.0
