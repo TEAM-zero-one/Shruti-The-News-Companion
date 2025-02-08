@@ -28,8 +28,11 @@ jobs:
       - name: Install other requirements
         run: pip install -r requirements.txt
 
-      - name: Execute newday.py
-        run: python project/newday.py
+      # - name: Execute newday.py
+      #   run: python project/newday.py
+
+      - name: Execute dummy
+      - run: python project/collect.py
 
       - name: Commit files
         run: |
@@ -40,5 +43,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAT_TOKEN }}
           branch: main
