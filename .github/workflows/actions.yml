@@ -1,0 +1,41 @@
+name: Run Scripts
+
+on:
+  schedule:
+    # Run newday.py every day.
+    - cron: '30 02 * * *'
+    
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install torch torchvision torchaudio
+      - name: Install other requirements
+        run: pip install -r requirements.txt
+
+      - name: Execute newday.py
+        run: python project/newday.py
+
+      - name: Commit files
+        run: |
+          git config --local user.email "aryan2001atat@gmail.com"
+          git config --local user.name "aryan2001atat"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "Updated logs" --allow-empty)
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
