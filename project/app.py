@@ -124,7 +124,7 @@ def clean_audio_files():
 # UI Components
 def render_category_selector():
     """Render category selection buttons"""
-    st.markdown("<h1 class='main-title'>📰 Shruti - Your AI-Powered News Summarizer 🤖</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='main-title'>📰 Shruti - The NEWS Companion 🤖</h1>", unsafe_allow_html=True)
     st.markdown("<div class='category-container'>", unsafe_allow_html=True)
     
     cols = st.columns(len(category_csv_files) + 1)
