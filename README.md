@@ -5,22 +5,22 @@ Shruti is an innovative and comprehensive news companion that combines cutting-e
 
 
 ## Features 🚀
-1. Web Scraping 🌐
+### 1. Web Scraping 🌐
 Shruti scrapes the web to gather the latest news articles from multiple sources, ensuring that the user receives the freshest content. 🔄
 
-2. News Classification Using Stacking 📊
+### 2. News Classification Using Stacking 📊
 Shruti uses an advanced stacking model to classify news articles based on categories. This approach involves stacking multiple classifiers to enhance accuracy and make reliable predictions. 🏆
 
-3. News Summarization 📝
+### 3. News Summarization 📝
 Using BART, Shruti can automatically summarize any news article, presenting only the key points for a quick overview. 📃 Users can input their own content, and Shruti will condense it for easier reading.
 
-4. Text-to-Speech (TTS) 🎤
+3## 4. Text-to-Speech (TTS) 🎤
 For accessibility, Shruti uses gTTS to read the summarized text or the answers aloud, so users can listen to the content rather than read it themselves. 🎧
 
-5. User Questionnaire 📝
+### 5. User Questionnaire 📝
 Shruti includes a DistilBERT-powered questionnaire that helps gather user preferences, improving the overall user experience. 🌱
 
-6. Text Summarization for User-Provided Content ✂️
+### 6. Text Summarization for User-Provided Content ✂️
 Shruti allows users to provide their own text, which it will then summarize into a shorter, more concise version. This feature enables users to quickly get the main points from any article or document. 📃
 
 
@@ -53,11 +53,11 @@ streamlit run app.py
 For the news classification feature, a stacking classifier has been employed. The following models are used in the stack:
 
 ### Base Models:
-Naive Bayes (Multinomial) 📚
-SVC (Support Vector Classifier) 🧳
-Random Forest 🌳
+#### Naive Bayes (Multinomial) 📚
+#### SVC (Support Vector Classifier) 🧳
+#### Random Forest 🌳
 ### Meta-Model:
-Logistic Regression ⚖️
+#### Logistic Regression ⚖️
 This stacking technique takes the predictions of each base model and feeds them into the Logistic Regression model as a meta-classifier to make the final prediction.
 
 
@@ -69,23 +69,24 @@ Listen to Summaries: Enable the TTS feature to listen to the summarized content.
 
 
 ## SnapShots
+### Home Page
 ![Home](images/1.png)
 
-
+### Latest News
 ![News Summary, Text_to_Speech, Questionarre ](images/2.png)
 
-
+### Custom Summary Generation
 ![Custom Summary Generator](images/3.png)
 
 
 ## Technologies Used 💻
-Python: Primary programming language 🐍
-Streamlit: For building the interactive app 🌊
-BART: For text summarization 🔠
-DistilBERT: For the user questionnaire model 🧠
-gTTS: For text-to-speech functionality 🎙️
-scikit-learn: For machine learning models (stacking classifier) ⚙️
-Matplotlib : For visualizations 📊
+#### Python: Primary programming language 🐍
+#### Streamlit: For building the interactive app 🌊
+#### BART: For text summarization 🔠
+#### DistilBERT: For the user questionnaire model 🧠
+#### gTTS: For text-to-speech functionality 🎙️
+#### scikit-learn: For machine learning models (stacking classifier) ⚙️
+#### Matplotlib : For visualizations 📊
 
 
 ## Acknowledgments 🙏
