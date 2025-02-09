@@ -178,7 +178,7 @@ selected_category = st.session_state.selected_category
 if not selected_category:
     st.write("## Welcome to Shruti!")
     st.write("### Explore the latest news, summarize content, or ask AI your questions!")
-    st.image("https://your-image-link.com/image.jpg", use_container_width=True)
+    # st.image("", use_container_width=True)
     
     # Added About Section
     st.markdown("""
