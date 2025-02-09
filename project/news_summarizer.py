@@ -3,6 +3,9 @@ import re
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk import download
 from typing import List, Optional
+import nltk
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
 MODEL_NAME = "facebook/bart-large-cnn"
 tokenizer = BartTokenizer.from_pretrained(MODEL_NAME)
