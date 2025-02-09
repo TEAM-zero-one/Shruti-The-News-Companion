@@ -192,6 +192,13 @@ Disclaimer: Educational use only. Web scraping without authorization is not endo
 </p>
 """, unsafe_allow_html=True)
 
+hide_footer = """
+    <style>
+    footer {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_footer, unsafe_allow_html=True)
+
 AUDIO_TEMP_DIR.cleanup()
 
 
