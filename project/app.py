@@ -64,7 +64,7 @@ st.markdown("""
         }
         .about-box {
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: black;
             border-radius: 10px;
             margin: 20px 0;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
