@@ -4,20 +4,10 @@ Shruti is an innovative and comprehensive news companion that combines cutting-e
 
 Features 🚀
 1. Web Scraping 🌐
-Shruti scrapes the web to gather the latest news articles from multiple sources, ensuring that the user receives the freshest content. 🔄
+Shruti scrapes the web to gather the latest news articles from the famous Times of India website , ensuring that the user receives the freshest content. 🔄
 
 2. News Classification Using Stacking 📊
 Shruti uses an advanced stacking model to classify news articles based on categories. This approach involves stacking multiple classifiers to enhance accuracy and make reliable predictions. 🏆
-
-The base models are:
-
-Naive Bayes (Multinomial) 📚
-SVC (Support Vector Classifier) 🧳
-Random Forest 🌳
-The meta-model is:
-
-Logistic Regression ⚖️
-The stacking technique leverages the strengths of each base model and combines them with the meta-model for robust performance. 🔍
 
 3. News Summarization 📝
 Using BART, Shruti can automatically summarize any news article, presenting only the key points for a quick overview. 📃 Users can input their own content, and Shruti will condense it for easier reading.
@@ -53,7 +43,9 @@ bash
 Copy
 Edit
 streamlit run app.py
-Model Training: News Classification 🧑‍💻
+
+
+Model Training for  News Classification 🧑‍💻
 For the news classification feature, a stacking classifier has been employed. The following models are used in the stack:
 
 Base Models:
@@ -70,8 +62,7 @@ Usage 💡
 Get News: The app will automatically pull the latest news articles and classify them. 📰
 Summarize News: Users can input any text, and Shruti will generate a concise summary. ✂️
 Listen to Summaries: Enable the TTS feature to listen to the summarized content. 🎧
-Contributing 🤝
-Feel free to fork the project and submit pull requests. Here’s how you can contribute:
+
 
 SnapShots
 ![Home](images/1.png)
@@ -90,7 +81,8 @@ BART: For text summarization 🔠
 DistilBERT: For the user questionnaire model 🧠
 gTTS: For text-to-speech functionality 🎙️
 scikit-learn: For machine learning models (stacking classifier) ⚙️
-Matplotlib & Seaborn: For visualizations 📊
+Matplotlib For visualizations 📊
+
 Acknowledgments 🙏
 Hugging Face for providing the pre-trained BART and DistilBERT models. 🤗
 Streamlit for enabling easy app development. 🌐
