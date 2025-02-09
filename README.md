@@ -1,6 +1,6 @@
 # ⭐Shruti-The-News-Companion⭐
 
-Shruti is an innovative and comprehensive news companion that combines cutting-edge AI technologies to help users stay updated with the latest news, get quick summaries, and even interact with news content using question answering. 📰
+Shruti is an innovative and comprehensive news companion that combines cutting-edge AI technologies to help users stay updated with the latest news, get quick summaries, and even interact with news content using question answering. 📰 
 
 
 
