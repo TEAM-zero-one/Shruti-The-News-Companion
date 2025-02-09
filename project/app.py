@@ -20,7 +20,7 @@ st.markdown("""
             text-align: center;
             font-size: 36px;
             font-weight: bold;
-            color: #333;
+            color: white;
         }
         .separator {
             height: 2px;
