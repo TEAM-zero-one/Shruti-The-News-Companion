@@ -6,4 +6,4 @@ def answers(context, question):
                     'question': question
                 })
         return result['answer']
-#
+
