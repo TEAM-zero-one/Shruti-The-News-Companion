@@ -193,7 +193,7 @@ if not selected_category:
             </ul>
             <p>Developed by:</p>
             <ul>
-                <li><a href='https://github.com/aryan2001atat' target='_blank'>Aryan Pal</a></li>
+                <li><a href='https://github.com/aryan2001atat' target='_blank'>Aaryan Pal</a></li>
                 <li><a href='https://github.com/adrs3342' target='_blank'>Adarsh Sharma</a></li>
                 <li><a href='https://github.com/ashutosh-awasthi23' target='_blank'>Ashutosh Awasthi</a></li>
                 <li><a href='https://github.com/zwarriors2208' target='_blank'>Kumar Ankit</a></li>
