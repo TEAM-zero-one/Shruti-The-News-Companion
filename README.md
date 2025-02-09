@@ -14,7 +14,7 @@ Shruti uses an advanced stacking model to classify news articles based on catego
 ### 3. News Summarization 📝
 Using BART, Shruti can automatically summarize any news article, presenting only the key points for a quick overview. 📃 Users can input their own content, and Shruti will condense it for easier reading.
 
-3## 4. Text-to-Speech (TTS) 🎤
+### 4. Text-to-Speech (TTS) 🎤
 For accessibility, Shruti uses gTTS to read the summarized text or the answers aloud, so users can listen to the content rather than read it themselves. 🎧
 
 ### 5. User Questionnaire 📝
