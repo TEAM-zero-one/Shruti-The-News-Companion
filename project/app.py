@@ -31,7 +31,7 @@ st.markdown("""
             text-align: center;
             font-size: 36px;
             font-weight: bold;
-            color: #333;
+            color: white;
         }
         .category-container {
             display: flex;
