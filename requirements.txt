@@ -18,5 +18,9 @@ torch==2.2.0  # Required for DistilBERT
 torchvision==0.17.0
 torchaudio==2.2.0
 
+# Pdf File requirements
+pdfplumber==0.9.0
+fpdf==1.7.2
+
 # Deployment & UI
 streamlit==1.33.0

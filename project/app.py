@@ -19,6 +19,7 @@ from pathlib import Path
 import tempfile
 from news_summarizer import text_summarizer
 from QnA import answers
+from pdf_utils import extract_text_from_pdf,generate_pdf
 
 # Configuration
 st.set_page_config(layout="wide")
@@ -99,6 +100,10 @@ def get_csv_paths():
         'Sports': csv_folder / 'data/sports.csv'
     }
 
+
+
+
+
 # Audio Handling Utilities
 def create_audio(text: str) -> str:
     """Generate and save audio file from text using gTTS"""
@@ -120,6 +125,9 @@ def clean_audio_files():
         except Exception as e:
             st.error(f"Error cleaning audio files: {str(e)}")
     st.session_state.audio_files = set()
+
+
+
 
 # UI Components
 def render_category_selector():
@@ -216,11 +224,82 @@ elif selected_category != "Generate Summary":
 # Custom Summary Page
 else:
     st.write("## Generate a Custom Summary")
+    input_type = st.radio("Choose Input Type:", ["Text Input", "Upload PDF"])
+    if input_type == "Text Input":
     
-    # Input Section
-    user_input = st.text_area("Enter text to summarize:", key="user_input", 
-                             on_change=lambda: st.session_state.update({"summary": None, "answer": None}))
-    
+        # Input Section
+        user_input = st.text_area("Enter text to summarize:", key="user_input", 
+                                on_change=lambda: st.session_state.update({"summary": None, "answer": None}))
+        
+        
+        # Summary Generation
+        if st.button("Generate Summary", key="btn_generate"):
+            if user_input.strip():
+                with st.spinner("Analyzing text..."):
+                    summary = text_summarizer(user_input, **st.session_state.filters)
+                    st.session_state.summary = summary
+                    st.session_state.answer = None
+            else:
+                st.warning("Please enter text to summarize")
+        
+        # Display Summary
+        if st.session_state.summary:
+            st.markdown("<div class='summary-box'>", unsafe_allow_html=True)
+            st.write("### Generated Summary:")
+            st.success(st.session_state.summary)
+            
+            # Audio Conversion
+            audio_path = create_audio(st.session_state.summary)
+            if audio_path:
+                st.session_state.audio_files.add(audio_path)
+                st.audio(audio_path)
+            
+            # Q&A Section
+            st.write("### Ask a Question")
+            user_question = st.text_input("Your question:", key="summary_question", 
+                                        value=st.session_state.question)
+            
+            if st.button("Get Answer"):
+                if user_input.strip() and user_question.strip():
+                    with st.spinner("Finding answer..."):
+                        answer = answers(user_input, user_question)
+                        st.session_state.answer = answer
+                else:
+                    st.warning("Please enter both text and question")
+            
+            if st.session_state.answer:
+                st.success(f"**Answer:** {st.session_state.answer}")
+        
+        st.markdown("</div>", unsafe_allow_html=True)
+    elif input_type == "Upload PDF":
+        st.subheader("📂 Upload a PDF Document")
+
+        uploaded_pdf = st.file_uploader("Upload a PDF file", type=["pdf"])
+        if uploaded_pdf is not None:
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp_file:
+                temp_file.write(uploaded_pdf.read())
+                pdf_path = temp_file.name
+
+            # Extract and summarize text
+            with st.spinner("Extracting text from PDF..."):
+                extracted_text = extract_text_from_pdf(pdf_path)
+
+            if extracted_text:
+                with st.spinner("Summarizing text..."):
+                    pdf_summary = text_summarizer(extracted_text)
+                    st.session_state.pdf_summary = pdf_summary
+
+                # Generate and provide PDF download
+                pdf_summary_path = generate_pdf(st.session_state.pdf_summary)
+                st.success("### Summary Generated! Download below:")
+
+                with open(pdf_summary_path, "rb") as pdf_file:
+                    st.download_button(label="📥 Download Summary as PDF",
+                                    data=pdf_file,
+                                    file_name="summary.pdf",
+                                    mime="application/pdf")
+            else:
+                st.error("Could not extract text from the uploaded PDF.")
     # Advanced Settings
     if st.button("Toggle Advanced Settings", key="btn_advanced"):
         st.session_state.show_filters = not st.session_state.show_filters
@@ -242,47 +321,7 @@ else:
             "detail_level": detail_level,
             "repetition_control": repetition_control
         }
-    
-    # Summary Generation
-    if st.button("Generate Summary", key="btn_generate"):
-        if user_input.strip():
-            with st.spinner("Analyzing text..."):
-                summary = text_summarizer(user_input, **st.session_state.filters)
-                st.session_state.summary = summary
-                st.session_state.answer = None
-        else:
-            st.warning("Please enter text to summarize")
-    
-    # Display Summary
-    if st.session_state.summary:
-        st.markdown("<div class='summary-box'>", unsafe_allow_html=True)
-        st.write("### Generated Summary:")
-        st.success(st.session_state.summary)
-        
-        # Audio Conversion
-        audio_path = create_audio(st.session_state.summary)
-        if audio_path:
-            st.session_state.audio_files.add(audio_path)
-            st.audio(audio_path)
-        
-        # Q&A Section
-        st.write("### Ask a Question")
-        user_question = st.text_input("Your question:", key="summary_question", 
-                                     value=st.session_state.question)
-        
-        if st.button("Get Answer"):
-            if user_input.strip() and user_question.strip():
-                with st.spinner("Finding answer..."):
-                    answer = answers(user_input, user_question)
-                    st.session_state.answer = answer
-            else:
-                st.warning("Please enter both text and question")
-        
-        if st.session_state.answer:
-            st.success(f"**Answer:** {st.session_state.answer}")
-        
-        st.markdown("</div>", unsafe_allow_html=True)
-
+                
 # Footer
 st.markdown("""
 <p style='font-size: small; color: grey; text-align: center;'>
