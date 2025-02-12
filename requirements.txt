@@ -24,3 +24,4 @@ fpdf==1.7.2
 
 # Deployment & UI
 streamlit==1.37.0
+numpy==1.26.4 
