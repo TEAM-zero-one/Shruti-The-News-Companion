@@ -1,5 +1,55 @@
 Article Title,Article Link,Article Text,Article Summary,Article Image
-"ChatGPT global outage continues: Users report facing issues with OpenAI's AI chatbot after 10 hours, what the company has to say",https://timesofindia.indiatimes.com/technology/tech-news/chatgpt-down-openais-ai-chatbot-experiences-global-outage-what-the-company-has-to-say/articleshow/121752073.cms,"ChatGPT, the popular AI chatbot by OpenAI, faced a major global disruption. Users across India, the US, and the UK reported issues with the web, app, login, and APIs. OpenAI acknowledged the problem, citing elevated error rates and latency. Services like APIs, ChatGPT, and Sora were affected. The company is investigating the cause of the degraded performance.","Chatgpt, the popular ai chatbot by openai, faced a major global disruption. Users across india, the us, and the uk reported issues with the web, app, login, and apis. Openai acknowledged the problem, citing elevated error rates and latency.","https://static.toiimg.com/thumb/msid-121752101,width-1070,height-580,imgsize-17650,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+OnePlus Bullets Wireless Z3 to launch in India on June 19,https://timesofindia.indiatimes.com/technology/wearables/oneplus-bullets-wireless-z3-to-launch-in-india-on-june-19/articleshow/121826635.cms,"OnePlus is set to launch its Bullets Wireless Z3 neckband in India on June 19, promising long playtime, clear calls, and immersive audio with ultra-fast charging, offering up to 27 hours of playback with just 10 minutes of charge.","Oneplus is set to launch its bullets wireless z3 neckband in india on june 19. The neckband promises long playtime, clear calls, and immersive audio with ultra-fast charging. It offers up to 27 hours of playback with just 10 minutes of charge.","https://static.toiimg.com/thumb/msid-121826625,width-1070,height-580,imgsize-21010,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+"Google shares 'mini incident report' on outage that disrupted services of Spotify, OpenAI and others: We are deeply sorry for ...",https://timesofindia.indiatimes.com/technology/tech-news/google-shares-mini-incident-report-on-outage-that-disrupted-services-of-spotify-openai-and-others-we-are-deeply-sorry-for-/articleshow/121826322.cms,"(All Times US/Pacific)
+
+Incident Start: 12 June, 2025 10:49
+
+All regions except us-central1 mitigated: 12 June, 2025 12:48
+
+Incident End: 12 June, 2025 13:49
+
+Duration: 3 hours
+
+Regions/Zones: Global
+
+What Google’s ‘mini incident report’ says on recent outage
+
+Multiple Google Cloud and Google Workspace products experienced increased 503 errors in external API requests, impacting customers.
+
+From our initial analysis, the issue occurred due to an invalid automated quota update to our API management system which was distributed globally, causing external API requests to be rejected. To recover we bypassed the offending quota check, which allowed recovery in most regions within 2 hours. However, the quota policy database in us-central1 became overloaded, resulting in much longer recovery in that region. Several products had moderate residual impact (e.g. backlogs) for up to an hour after the primary issue was mitigated and a small number recovering after that.
+
+Google will complete a full Incident Report in the following days that will provide a detailed root cause.
+
+Prevent our API management platform from failing due to invalid or corrupt data.
+
+Prevent metadata from propagating globally without appropriate protection, testing and monitoring in place.
+
+Improve system error handling and comprehensive testing for handling of invalid data.
+
+Android 16 IS HERE! Live Notifications, Tablet Desktop Mode & MORE!
+
+Alphabet’s Google Cloud suffered an outage earlier today, disrupting services across multiple platforms, including Spotify, Discord, Snapchat, OpenAI among others. According to Downdetector.com, the downtime started around 1:50 p.m. ET (11:20 PM) and there were 14,729 reports of Google Cloud being down in the U.S. around 2:32 p.m. ET. Google Cloud acknowledged the outage and also resolved the outage. Issuing a fix for the same, the company said “The issue with Google Chat, Google Meet, Gmail, Google Calendar, Google Drive, Google Cloud Search, Google Tasks, Google Voice has been resolved for all affected users”. It has now published a mini incident report of the incident.Google says “We are deeply sorry for the impact to all of our users and their customers that this service disruption/outage caused. Businesses large and small trust Google Cloud with your workloads and we will do better. In the coming days, we will publish a full incident report of the root cause, detailed timeline and robust remediation steps we will be taking. Given the size and impact of this incident, we would like to provide some information below.”According to the Google Cloud status webpage, the outage lasted 3 hours. Here’s the timeline shared by GoogleAs stated on Google Cloud status page, the mini incident report says:The company further added that it will take the following measures to prevent future recurrence:","Alphabet’s google cloud suffered an outage earlier today, disrupting services across multiple platforms, including spotify, discord, snapchat, openai among others. According to downdetector.com, the downtime started around 1:50 p.m. Et (11:20 pm) and there were 14,729 reports of google cloud being down in the u.s. google cloud acknowledged the outage and also resolved the outage.","https://static.toiimg.com/thumb/msid-121826311,width-1070,height-580,imgsize-37126,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+Sam Altman just dropped a big AI prediction for 2026; experts are skeptical,https://timesofindia.indiatimes.com/technology/tech-news/sam-altman-just-dropped-a-big-ai-prediction-for-2026-experts-are-skeptical/articleshow/121811592.cms,"Sam Altman AI prediction for 2026
+
+What Sam Altman really said: AI with ""novel insights"" by 2026
+
+""By 2026, we will likely see the arrival of systems that can figure out novel insights,""
+
+What does ""novel insight"" really mean
+
+An AI race for survival: Other technology giants are not lagging behind
+
+Google DeepMind just released a paper on AlphaEvolve, a coding AI agent that created innovative solutions to challenging math problems, something even accomplished researchers hadn't tried.
+
+Anthropic founder of Claude AI, established a research grant program in May 2025 to support research projects that employ AI to generate scientific hypotheses and conduct experiments.
+
+FutureHouse, founded by ex-Google CEO Eric Schmidt, states its AI assisted in an actual scientific breakthrough, though details are kept under wraps.
+
+Lila Sciences, a startup by now-former OpenAI researcher Kenneth Stanley, has raised $200 million to create a lab dedicated to teaching AI models to ask more intelligent scientific questions, a basic prerequisite for insight.
+
+Why 'novel insights' from AI might still be useless, experts say
+
+In a fresh thought-provoking article entitled ""The Gentle Singularity,"" OpenAI CEO Sam Altman has again moved in with a daring prediction: by 2026, artificial intelligence systems will be able to make ""novel insights."" The claim may sound ambiguous in itself, yet in the context of the developing objectives of OpenAI and the wider competitive scene of AI research, it weighs. Altman, who is famous for his futurist vision and bold declarations regarding artificial general intelligence (AGI), presents this forecast as part of an extended evolution of human society, one where AI remakes work, energy, innovation, and even scientific breakthroughs.His essay, released June 10, 2025, is more than prediction; it can be used as an unofficial guide for where OpenAI and its competitors are going next. This race towards AI systems coming up with genuine, new ideas instead of merely recombining present information is becoming the next arms race in technology innovation. With major breakthroughs being achieved by Google DeepMind, Anthropic, and upstart companies such as Lila Sciences and FutureHouse, the stakes are high not just for corporate hegemony but for the future of science itself.Altman's essay describes his vision for the ""gentle singularity,"" an era in which AGI does not destroy or dismantle civilization but rather becomes a productive, evolutionary partner to humans. Perhaps one of the most remarkable things he predicts is this:This matter-of-fact-sounding sentence has huge implications. First of all, it indicates that OpenAI is approaching a level of model capability where artificial intelligence can move past summarization, prediction, or pattern matching and start to think creatively. This is the distinction between an AI that simply reports data and one that adds meaningfully to human knowledge.OpenAI President and co-founder Greg Brockman has recently supported this concept when announcing the o3 and o4-mini models in April 2025. ""These were the first models scientists used to create useful new ideas in their field,"" he declared, suggesting that OpenAI is already developing the kind of AI that Altman described in his essay.The ""novel insight"" in AI is the capability of the AI model to generate new, valuable, and hitherto not thought-provoking ideas or hypotheses. This characteristic stretches much beyond the current realm of capabilities of AI chatbots and big language models that are based on spewing out known facts.Altman's prophetic essay is not isolated. Over the past few months, a host of major players have taken strategic actions in line with the premise of ""novel insight"" creation:Even as the hype sets in, top AI minds remain hesitant. Hugging Face Chief Science Officer Thomas Wolf recently contended that existing models can't pose genuinely new questions, a precondition for any scientific breakthrough. Likewise, Kenneth Stanley himself concedes that the issue is ""fundamentally difficult,"" not merely a matter of computational horsepower but modeling what humans find ""interesting"" or ""meaningful.""Creativity is not just computation, but intuition and judgment areas where AI still lags. This means that even if models can generate new hypotheses, it remains unclear how useful, testable, or correct these insights will be.","Openai ceo sam altman predicts that by 2026, artificial intelligence systems will be able to make ""novel insights"" race towards ai systems coming up with genuine, new ideas is becoming the next arms race in technology innovation. With major breakthroughs being achieved by google deepmind, anthropic, and upstart companies such as lila sciences, the stakes are high.","https://static.toiimg.com/thumb/msid-121822610,width-1070,height-580,imgsize-56182,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
 "Apple iPhone 16 is available for Rs 24,900 on Amazon; know how to grab the deal",https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-iphone-16-is-available-for-rs-24900-on-amazon-know-how-to-grab-the-deal/articleshow/121682470.cms,"iPhone 16
 
 Apple iPhone 16 (128GB, Black) Amazon deal: Check exchange deal and bank offer
@@ -418,50 +468,730 @@ Certainty leads. Humility follows.
 When you're sure, they notice.
 
 A perfect caption isn’t just words, it’s the final touch that adds power to your post. It turns a good photo into a memorable one, gives your vibe a voice, and sets the tone for your audience. For boys who carry confidence, attitude, and effortless style, the right caption becomes a reflection of who they are. It's about being cool, composed, and unapologetically bold. Whether you're flexing a fresh look or sharing a quiet moment or just dropping a casual selfie, your caption amplifies your presence without saying too much. That’s where this collection comes in. From savage confidence and silent strength to clean swag and poetic grit, these handpicked lines are built to suit every kind of mood and moment. No fluff, no show off, just impactful, original captions that match your mindset. Scroll through and find the one that speaks your truth. Because every king deserves words that wear the crown just right.A great Instagram caption can make a big difference in how your post is received. While the photo or video catches people’s eyes, it's usually the caption that gets them to stop, read, and engage. A good caption adds meaning to your content, whether it's telling a story, sharing a feeling, or making someone laugh. It can help show your personality and make your followers feel more connected to you. Whether you're posting something personal or promoting something important, the right caption can turn a simple post into something that really engages with people.","From swaggy to confident to stylish: top instagram captions to put your attitude right. Style is a reflection of attitude and personality. Insecurities are loud. Rule your mind or it will rule you. For boys who carry confidence, attitude, and effortless style, the right caption becomes a reflection of who they are.","https://static.toiimg.com/thumb/msid-121779621,width-1070,height-580,imgsize-17166,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-Nvidia CEO Jensen Huang: There’s a new programming language. It is called…,https://timesofindia.indiatimes.com/technology/tech-news/nvidia-ceo-jensen-huang-theres-a-new-programming-language-it-is-called/articleshow/121746887.cms,"
+"Nvidia CEO Jensen Huang predicts boom in self driving cars, says ‘This is going to decade of ...'",https://timesofindia.indiatimes.com/technology/tech-news/nvidia-ceo-jensen-huang-predicts-boom-in-self-driving-cars-says-this-is-going-to-decade-of-/articleshow/121824220.cms,"When Jensen Huang said programming AI is like programming a person
 
-Jensen Huang’s AI warning
+Android 16 IS HERE! Live Notifications, Tablet Desktop Mode & MORE!
 
-Your iPhone's NEW Home is India: Apple's new Manufacturing HUB!
+Nvidia CEO Jensen Huang recently said that the next decade will be the era of autonomous driving cars, robots and autonomous machines. In an interview with CNBC’s Arjun Kharpal Thursday at the Viva Tech conference in Paris, Huang said “This is going to be the decade of AV [autonomous vehicles], robotics, autonomous machines.”Nvidia is playing an important role in the rise of autonomous vehicles (AVs), supplying both hardware and software to support their development. The US chip giant is a key enabler behind the growing fleet of self-driving cars , especially in the U.S., where Waymo — owned by Google — operates robotaxi services in cities like San Francisco, Phoenix, and Los Angeles.China has also seen growing adoption, with companies like Baidu and Pony.ai running their own robotaxi networks.Recently, Huang attended the London Tech Week where he said that AI is a “great equalizer” as it enables anyone to program using everyday language. Admitting that computing was hard historically, he said “We had to learn programming languages. We had to architect it. We had to design these computers that are very complicated”. “Now, all of a sudden ... there’s a new programming language. This new programming language is called ‘human,’” he added. ""Most people don't know C++, very few people know Python, and everybody, as you know, knows human.”He continued: “The way you program a computer today, to ask the computer to do something for you, even write a program, generate images, write a poem — just ask it nicely.”“And the thing that’s really, really quite amazing is the way you program an AI is like the way you program a person.”Explaining further, Huang gave an example saying, “You say, 'You are an incredible poet. You are deeply steeped in Shakespeare, and I would like you to write a poem to describe today's keynote.' Without very much effort, this AI would help you generate such a wonderful poem.”","N nvidia ceo jensen huang said the next decade will be the era of autonomous driving cars, robots and autonomous machines. The chip giant is a key enabler behind the growing fleet of self-driving cars, especially in the u.s.","https://static.toiimg.com/thumb/msid-121824190,width-1070,height-580,imgsize-953838,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+"WhatsApp status captions: 250+ cool, funny, and loving quote ideas to express your mood and vibe",https://timesofindia.indiatimes.com/technology/social/whatsapp-status-captions-250-cool-funny-and-loving-quote-ideas-to-express-your-mood-and-vibe/articleshow/121809077.cms,"WhatsApp captions for every mood
 
-Nvidia CEO Jensen Huang said that programming artificial intelligence (AI) is similar to how one “programs a person”. Speaking at London Tech Week recently, Huang said that AI is a “great equalizer” as it enables anyone to program using everyday language. Admitting that computing was hard historically, he said “We had to learn programming languages. We had to architect it. We had to design these computers that are very complicated”. “Now, all of a sudden ... there’s a new programming language. This new programming language is called ‘human,’” Huang added. ""Most people don't know C++, very few people know Python, and everybody, as you know, knows human.”Jensen Huang continued: “The way you program a computer today, to ask the computer to do something for you, even write a program, generate images, write a poem — just ask it nicely.”“And the thing that’s really, really quite amazing is the way you program an AI is like the way you program a person.”Explaining further, Jensen Huang gave an example saying, “You say, 'You are an incredible poet. You are deeply steeped in Shakespeare, and I would like you to write a poem to describe today's keynote.' Without very much effort, this AI would help you generate such a wonderful poem.”“And when it answers, you could say, 'I feel like you could do even better.' And it will go off and think about it and it will come back and say, 'In fact, I can do better.' And it does do a better job.”Jensen Huang’s comments after he warned of changing workplace due to AI. Speaking at the Milken Institute Global Conference in May this year, he said “You’re not going to lose your job to an AI, but you’re going to lose your job to someone who uses AI.”Huang’s message underlines a critical paradigm shift — the disruption caused by AI won’t simply be about outright job loss through automation but about a growing divide between those who harness AI as a tool and those who do not.","Jensen huang said that ai is a ‘great equalizer’ as it enables anyone to program using everyday language. Admitting that computing was hard historically, he said “we had to learn programming languages. We had to architect these computers that are very complicated”","https://static.toiimg.com/thumb/msid-121746988,width-1070,height-580,imgsize-30406,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-"Deloitte's well-being subsidy program for employees in the US has a new addition, one of the most expensive ...",https://timesofindia.indiatimes.com/technology/tech-news/deloittes-well-being-subsidy-program-for-employees-in-the-us-has-a-new-addition-one-of-the-most-expensive-/articleshow/121781038.cms,"Deloitte employees excited about new well-being subsidy program
 
-HP EliteBook Ultra G1i Review: Thin, light, power in a premium package
 
-Deloitte is letting its US employees spend part of their annual wellness subsidy on Lego sets, puzzles, and other stress-relieving items. According to a Business Insider, the action is part of a revamped effort by the company to support worker well-being. According to internal policy documents seen by the publication, the Big Four consulting firm updated its long-running benefits program at the start of its financial year on June 1. The program gives most salaried employees up to $1,000 annually to spend on approved items that promote mental, physical, or financial wellness, the report says. Legos, along with puzzles, kitchen appliances, spa services, gaming consoles, and ergonomic pillows, are among the new additions.Deloitte US had 172,800 employees in 2024. As per the report, employees have welcomed the change. A Deloitte employee said that the update sparked jokes and excitement on internal chats. “Most of the responses are things like ‘Lego?!?!? Finally!’ or jokes about how they can now rationalise buying the coveted Millennium Falcon Star Wars Lego set,” they said. The $850 set leaves a small remainder of the subsidy for other qualifying purchases.Another Deloitte employee said that the benefit helps manage the intense pace of work: “Knocking out a four-hour Lego build in under two hours is a great stress reliever.”However, not all employees are happy with it. Some Deloitte employees remain skeptical. One staffer told BI the perk exists “because of how much this job sucks.”The updated program comes as Deloitte’s US division faces challenges, particularly in its government consulting arm. By April 2025, at least 127 federal contracts had been modified or canceled following the White House’s push to cut spending. Deloitte Consulting CEO Jason Salzetti later confirmed that a “small percentage” of employees in the government division would be laid off.","Deloitte us had 172,800 employees in 2024. The program gives most salaried employees up to $1,000 annually to spend on approved items that promote mental, physical, or financial wellness. Legos, along with puzzles, kitchen appliances, spa services, gaming consoles, and ergonomic pillows are among the new additions.","https://static.toiimg.com/thumb/msid-121781036,width-1070,height-580,imgsize-26928,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+Cool captions for WhatsApp status
+
+
+
+HOME: Where I can look ugly and enjoy it.
+
+Today morning when I was driving my Ferrari, the alarm woke me up.
+
+Dear Math, please grow up and solve your problems. I'm tired of answering them for you.
+
+Normal is boring.
+
+I need Google in my brain.
+
+I like to hang out with people that make me forget to look at my phone.
+
+I've found the recipe for happiness. Can someone just send me some money so that I can buy the ingredients?
+
+I love food and sleep. If I give you a bit of food or text you all night, that means something.
+
+Be your own kind of beautiful
+
+Unlike protons I don’t deal with negativity
+
+ME my room music internet connection no study a perfect day
+
+If u can’t do great things then do small and simple things in a great way
+
+Real beauty is to be true to oneself that’s what makes me feel good
+
+Be yourself everyone else is already taken
+
+I don’t have an attitude problem you have a perception problem
+
+Work hard in silence let your success be your noise
+
+Dream without fear love without limits
+
+Keep calm and let karma finish it
+
+I’m not a player I’m the game
+
+Don’t tell people your dreams show them
+
+Success is the best revenge for anything
+
+I’m not special I’m just a limited edition
+
+Be so good they can’t ignore you
+
+I may be wrong but I doubt it
+
+Turn your wounds into wisdom
+
+Live life to the fullest and focus on the positive
+
+Be a voice not an echo
+
+Keep your heels head and standards high
+
+My life my rules my attitude
+
+Make today so awesome that yesterday gets jealous
+
+Life is short make every hair flip fabulous
+
+Be your own kind of beautiful
+
+The best things in life are free The second best are very expensive
+
+Confidence is not they will like me Confidence is I’ll be fine if they don’t
+
+Collect moments not things
+
+You are enough just as you are
+
+Find yourself and be that
+
+Don’t be a prisoner of your past Become the architect of your future
+
+Choose people who choose you
+
+Be fearless in pursuing what sets your soul on fire
+
+Elegance is when the inside is as beautiful as the outside
+
+Don’t stop until you’re proud
+
+I am not a product of my circumstances I am a product of my decisions
+
+Stay real stay loyal or stay away from me
+
+Life is too short to be serious all the time So if you cant laugh at yourself call me Ill laugh at you
+
+Chase your dreams but always know the road that will lead you home again
+
+Be yourself everyone else is already taken
+
+I don't have an attitude problem you have a perception problem
+
+Work hard in silence let your success be your noise
+
+Dream without fear love without limits
+
+Motivational WhatsApp captions
+
+
+
+What you lack in talent can be made up with desire, hustle, and giving 110% all the time.
+
+Do what you can with all you have, wherever you are.
+
+Develop an attitude of gratitude. Say thank you to everyone you meet for everything they do for you.
+
+You are never too old to set another goal or dream a new one.
+
+To see what is right and not do it is a lack of courage.
+
+Reading is to the mind as exercise is to the body.
+
+Fake it until you make it. Act as if you had all the required confidence until it becomes your reality.
+
+The future belongs to the competent. Get good, get better, be the best.
+
+For every reason it’s not possible, there are hundreds of people who have faced the same circumstances and succeeded.
+
+Be a fountain, not a drain.
+
+Great things never come from comfort zones.
+
+Life is a journey, not a destination.
+
+Life always offers you a second chance. It’s called tomorrow.
+
+Every new day is another chance to change your life.
+
+Having a soft heart in a cruel world is courage, not weakness.
+
+Be brave. Take risks. Nothing can substitute experience.
+
+Prove yourself to yourself, not to others.
+
+Work for a cause, not applause. Live life to express, not to impress.
+
+When you can’t change the direction of the wind, adjust your sails.
+
+Why fit in if you’re born to stand out?
+
+Don’t take kindness as a sign of weakness.
+
+Minds are like parachutes — they only function when open.
+
+Start where you are. Use what you have. Do what you can.
+
+Success doesn’t come to you, you go to it.
+
+Hustle in silence, let your results make the noise.
+
+Every day is a fresh start – make it count.
+
+Dream big. Work hard. Stay focused.
+
+Rise above the storm and you’ll find the sunshine.
+
+The grind never lies.
+
+Your only limit is your mindset.
+
+Make it happen. Shock everyone.
+
+Progress over perfection, always.
+
+Don’t wait for an opportunity. Create it.
+
+Fuel your hustle with passion.
+
+You weren’t born to be average.
+
+Prove them wrong – every single day.
+
+Stay hungry, stay humble.
+
+Keep going – your future self will thank you.
+
+Build a life you don’t need a vacation from.
+
+The best views come after the hardest climbs.
+
+If you can dream it, you can do it.
+
+This year is yours – take the shot.
+
+Funny WhatsApp captions
+
+
+
+My favorite exercise is a cross between a lunge and a crunch I call it lunch
+
+I wish everything was as easy as getting fat
+
+Dear Math please grow up and solve your own problems
+
+A balanced diet means a cupcake in each hand
+
+My wallet is like an onion When I open it it makes me cry
+
+I cant believe I forgot to go to the gym today Thats 7 years in a row now
+
+Im not clumsy The floor hates me the table and chairs are bullies and the walls get in my way
+
+I didn't fall Im just spending some quality time with the floor
+
+I would lose weight but I hate losing
+
+Im not sleeping Im just resting my eyes
+
+I followed a diet but it didn't follow me back So I unfollowed it
+
+If there was an award for laziness I'd probably send someone to pick it up for me
+
+I don't sweat I sparkle
+
+Id agree with you but wed both be wrong
+
+Im on my second guardian angel My first one quit and is now in therapy
+
+I thought I wanted a career I just wanted paychecks
+
+I’m not lazy I’m just on energy-saving mode
+
+I need a six-month vacation twice a year
+
+I put the pro in procrastinate
+
+My bed and I are in a committed relationship
+
+Running late is my cardio
+
+Adulting is like folding a fitted sheet nobody really knows how
+
+WiFi food my bed perfection achieved
+
+I don’t rise and shine I caffeinate and hope
+
+I’m not arguing I’m just explaining why I’m right
+
+I followed my heart now I’m lost
+
+Life is short smile while you still have teeth
+
+If Monday had a face I’d punch it
+
+I’m on a seafood diet I see food and I eat it
+
+I whisper to my WiFi when it’s slow hoping it feels loved
+
+I tried to be normal once worst two minutes ever
+
+Common sense is like deodorant the people who need it never use it
+
+My hobbies include eating and complaining that I’m getting fat
+
+I’m not short I’m concentrated awesome
+
+Who needs GPS when you have zero direction in life
+
+I wish I were a unicorn so I could stab people with my head
+
+I’m not weird I’m just limited edition
+
+Why fall in love when you can fall asleep
+
+Some people graduate with honors I am just honored to graduate
+
+I’m silently correcting your grammar
+
+WiFi food my bed Perfection
+
+I’m great at multitasking I can waste time be unproductive and procrastinate all at once
+
+Reality called so I hung up
+
+I know the voices in my head aren’t real but they have great ideas
+
+If Monday had a face I’d punch it
+
+Life is short smile while you still have teeth
+
+Love caption for WhatsApp status
+
+
+
+You are the reason I look at my phone and smile
+
+In your arms is where I find my peace
+
+My favorite place in the world is next to you
+
+You make my heart skip a beat
+
+I didn’t choose you my heart did
+
+Forever is not long enough with you
+
+Every love story is beautiful but ours is my favorite
+
+With you every moment is magical
+
+You are the poem I never knew how to write
+
+You had me at hello
+
+I still fall for you every single day
+
+Your smile is literally the cutest thing I’ve ever seen
+
+I just want to make you happy because you make me happy
+
+You are my today and all of my tomorrows
+
+Loving you is the best decision I ever made
+
+The best feeling is when you look at me and smile
+
+I saw that you were perfect and so I loved you
+
+Then I saw that you were not perfect and I loved you even more
+
+Your love is all I need to feel complete
+
+You’re the reason behind my smile
+
+You + Me = Forever
+
+I never want to stop making memories with you
+
+I fall in love with you more every day
+
+You make my world brighter just by being in it
+
+No one else matters when I’m with you
+
+You are my sunshine on a cloudy day
+
+Together is my favorite place to be
+
+Your love is my favorite adventure
+
+You are my definition of perfect
+
+I wish time could stop when I’m with you
+
+Your voice is my favorite sound
+
+I didn’t believe in soulmates until I met you
+
+Home is wherever I’m with you
+
+Your hugs feel like home
+
+I love you more than I have ever found a way to say
+
+Just a kiss from you can fix everything
+
+Being in your arms feels like home
+
+You’re the reason my heart beats a little faster
+
+My heart is perfect because you’re inside
+
+You’re not my number one you’re my only one
+
+Your love is the spark that lights up my soul
+
+I found my forever when I found you
+
+You’re the dream I never want to wake up from
+
+When I’m with you time stands still
+
+All I need is your hand in mine
+
+Loving you feels like breathing effortless and essential
+
+You are my heart’s favorite place to be
+
+I love it when you call me yours
+
+Every day with you is my favorite day
+
+Emotional WhatsApp captions
+
+
+
+I wish I could turn back time and make everything right
+
+The saddest thing is feeling alone in a crowd
+
+I’m drowning in memories and there’s no way out
+
+Every heart has a pain only the way of expressing it is different
+
+The hardest part is pretending to be happy
+
+Some days I just want to disappear
+
+It’s hard to find happiness when you feel like nothing
+
+The silence after an argument is the loudest sound
+
+It hurts when you realize you aren’t as important to someone as you thought
+
+Saying goodbye to the one you love is like saying goodbye to your own happiness
+
+Sometimes you have to pretend everything is fine when it’s not
+
+I’m not okay but I’ll pretend to be
+
+Behind every strong person is a story that left them broken
+
+Loving you was my favorite mistake
+
+It’s hard to forget someone who was your entire life
+
+I miss the old us
+
+You left without a goodbye and now I’m left with the pieces
+
+I wish I could stop loving you but my heart refuses to listen
+
+Sometimes the people who are thousands of miles away from you can make you feel better than the ones right beside you
+
+I thought I mattered but I was wrong
+
+I’m tired of fighting for a love that’s already gone
+
+The scars you can’t see are the hardest to heal
+
+Tears speak when the heart can't
+
+Smiling outside, breaking inside
+
+Sometimes silence is the loudest cry
+
+I’m tired of pretending I’m fine
+
+Lost in a world that doesn’t see me
+
+It hurts, but I’ll deal with it
+
+The worst pain is being forgotten
+
+I miss the old me
+
+We were perfect… until we weren’t
+
+Crying isn’t a weakness, it’s a release
+
+The hardest part is acting like it’s okay
+
+Some scars never show, but they’re the deepest
+
+Loved too much, lost too hard
+
+Trust once broken is hard to rebuild
+
+Happiness left and didn’t say goodbye
+
+I’m okay… just tired of everything
+
+When memories hurt more than they heal
+
+Faking smiles is an exhausting job
+
+Some wounds time doesn't heal
+
+I'm not mad, just disappointed
+
+Hope hurts more than letting go
+
+People change, promises break
+
+Missing you is a daily struggle
+
+I wish feelings had an off switch
+
+Loneliness feels louder at night
+
+We said forever, but forever ended early
+
+No more expectations, no more pain
+
+Too broken to be fixed
+
+Love left, emptiness stayed
+
+Heart full of words never said
+
+Life WhatsApp captions
+
+
+
+Life isn’t perfect but it has perfect moments
+
+Just because you’re breathing doesn’t mean you’re living
+
+Life goes on with or without you
+
+Collect moments not things
+
+Life is a one time offer use it well
+
+Don’t count the days make the days count
+
+Simplicity is the keynote of true life
+
+Life is short smile while you still have teeth
+
+Your vibe attracts your tribe
+
+Difficult roads often lead to beautiful destinations
+
+Life begins at the end of your comfort zone
+
+Stay close to people who feel like sunshine
+
+In the end we only regret the chances we didn’t take
+
+Be yourself life’s too short to be anyone else
+
+Life’s beauty lies in small moments
+
+Life is tough but so are you
+
+Fall in love with taking care of yourself
+
+Live the story you want to tell
+
+Don’t survive thrive
+
+Life doesn’t have to be perfect to be beautiful
+
+Let your life be your message
+
+Live less out of habit more out of intent
+
+You only live once but if you do it right once is enough
+
+Life is a journey enjoy the ride
+
+Don’t just exist live
+
+Life is made of moments not milestones
+
+Be the energy you want to attract
+
+Make peace with your past so it doesn’t spoil your present
+
+The best view comes after the hardest climb
+
+Life rewards the brave
+
+Life is what happens when you're busy making other plans
+
+Live life to the fullest
+
+To live is the rarest thing in the world Most people exist that is all
+
+Life is short and its up to you to make it sweet
+
+In the end its not the years in your life that count Its the life in your years
+
+The purpose of life is to believe to hope and to strive
+
+Life is about making an impact not making an income
+
+Life is straightforward but we insist on complicating it
+
+Life is a journey that must be traveled no matter how bad the roads and accommodations
+
+Life is like riding a bicycle To keep your balance you must keep moving
+
+Life is 10 percent what happens to us and 90 percent how we react to it
+
+Life isn't about finding yourself. It's about creating yourself
+
+Life is too important to be taken seriously
+
+Life is short smile while you still have teeth
+
+Life is a onetime offer use it well
+
+Life is a beautiful struggle
+
+Life is short and it is up to you to make it sweet
+
+Life is a daring adventure or nothing at all
+
+Life is made of ever so many partings welded together
+
+Life is trying things to see if they work
+
+Also Read |
+
+Let your caption speak through your WhatsApp status quotes. It is not just words; it's your attitude, mood, and message wrapped in a single intense line. These captions are all about being bold with style, humour, and attitude. Whatever your mood, maybe something savage, sweet, considerate, or humorous there's a caption that can convey it without actually saying it. This carefully picked list of the top captions for WhatsApp is here to assist you in saying just what you want to say. From profound insights to cheeky one-liners, discover the ideal status update that speaks on your behalf. Scroll down and let your words speak loudly.","Whatsapp captions for every mood. Cool captions: where i can look ugly and enjoy it. Dear math, please grow up and solve your problems. Nothing can substitute experience. Success doesn’t come to you, you go to it. Work for a cause, not applause. Rise above the storm and you’ll find the sunshine.","https://static.toiimg.com/thumb/msid-121809223,width-1070,height-580,imgsize-26640,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+Anker recalls over 1 million PowerCore 10000 power banks: Here’s why and what customers should do now,https://timesofindia.indiatimes.com/technology/tech-news/anker-recalls-over-1-million-powercore-10000-power-banks-heres-why-and-what-customers-should-do-now/articleshow/121819077.cms,"Here’s why company is recalling Anker PowerCore 10000 power banks
+
+How to check if your power bank is affected
+
+Check the bottom of your power bank for ""Anker PowerCore 10000"" and the model number ""A1263."" A serial number (""SN"") is also present near the model number.
+
+Consumers should visit Anker's dedicated product recall page (www.anker.com/product-recalls) to verify if their unit is part of the recall using its serial number.
+
+Anker is offering affected customers either a free replacement power bank (Model A1388) or a $30 gift card for use on Anker.com.
+
+To receive a replacement or gift card, consumers will be required to submit a photo of their recalled power bank. This photo must clearly show the model number, serial number, the consumer's name, the date of the photograph, and the word ""recalled"" written in permanent marker on the device.
+
+How customers should dispose the affected Anker PowerCore 10000 power bank
+
+not
+
+Mobile charging accessories manufacturer Anker has recalled over 1.1 million units of its PowerCore 10000 power bank after receiving 19 reports of fires and explosions linked to the device. The recall, announced by the U.S. Consumer Product Safety Commission (CPSC), affects units sold between June 2016 and December 2022 under the model number A1263. The affected PowerCore 10000 units were sold online through Anker's official website, Amazon, Newegg, and eBay between June 2016 and December 2022. The company has urged the consumers who own the PowerCore 10000 (Model A1263) to using it immediately.According to the CPSC alert released on June 12, 2025, Anker has received 19 reports of fires and explosions involving the PowerCore 10000 (Model A1263). These incidents include two reports of minor burn injuries that did not require medical attention, and 11 reports of property damage totaling over $60,700. The core issue is identified as an overheating lithium-ion battery within the power bank, which can lead to melting plastic components, smoke, and fire.The CPSC and Anker emphasise that these lithium-ion batteries shouldbe thrown in regular trash, standard recycling bins, or used battery recycling boxes found at retail stores, due to the inherent fire risk. Consumers should contact their municipal household hazardous waste (HHW) collection center for guidance on proper disposal.",Anker has recalled over 1.1 million units of its powercore 10000 power bank. The recall affects units sold between june 2016 and december 2022 under the model number a1263. The company has received 19 reports of fires and explosions linked to the device. Anker is offering affected customers either a free replacement power bank or a $30 gift card.,"https://static.toiimg.com/thumb/msid-121819063,width-1070,height-580,imgsize-8132,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+"Apple CEO Tim Cook shares Steve Jobs' 'powerful advice' to Stanford students, says ‘It’s hard to believe it’s been 20 years since Steve told Stanford graduates to…’",https://timesofindia.indiatimes.com/technology/tech-news/apple-ceo-tim-cook-shares-steve-jobs-powerful-advice-to-stanford-students-says-its-hard-to-believe-its-been-20-years-since-steve-told-stanford-graduates-to/articleshow/121819581.cms,"Steve Jobs Stanford speech is one of the most watched speeches
+
+Most remembered line from Steve Jobs’s Stanford speech
+
+“Your time is limited, so don’t waste it living someone else’s life”
+
+“Stay hungry, stay foolish.”
+
+A speech about more than tech
+
+Apple's HUGE iPhone makeover: iOS 26 & Liquid Glass Explained!
+
+Apple CEO Tim Cook recently marked the 20th anniversary of Steve Jobs’ iconic 2005 Stanford commencement address by sharing a tribute to the late Apple co-founder on social media. In a post on X (formerly Twitter), Cook wrote “It’s hard to believe it’s been 20 years since Steve told Stanford graduates to stay hungry and stay foolish.” He continued, “His powerful advice still rings true, and I hope it helps guide this year’s new grads as they begin their journey to become tomorrow’s leaders.”In the post, Cook also shared a link to a newly updated version of Jobs’ famous speech, hosted on the Steve Jobs Archive website. The video has been enhanced from standard to high definition. The 2005 video, has been watched over 120 million times, and is one of the most influential commencement addresses in history. It has also been reproduced in media and school curricula around the world. ( You can watch it here As mentioned on the website, Job’s speech even helped inspire the Cleveland Cavaliers' 2016 NBA comeback, when LeBron James played a clip of it before Game 3 of the Finals. While the webpage includes rare photos, early drafts, and behind-the-scenes details about how the speech came together.The speech delivered by Jobs – a college dropout to one of the world’s top universities, has resonated deeply with audiences over the years. It included three personal stories from Jobs’ life, and its most remembered lines were deeply reflective:andAccording to the Steve Jobs Archive , Jobs spent months preparing for the speech. He worked on drafts, asked friends for advice, and collaborated closely with his wife, Laurene.On stage, Jobs wore jeans, a black shirt, and Birkenstocks under his graduation robe. Despite the heat and distractions in the stadium, he delivered his speech word-for-word. “This is the closest I’ve ever gotten to a college graduation,” he joked as he began.After the event, the class co-presidents sent him a thank-you note. Jobs replied: “Thank you all very much. It was really hard for me to prepare for this, but I loved it (especially when it was over…).”Though Jobs was known as a visionary in technology, his Stanford address focused on universal human experiences—love, loss, mortality, and staying true to oneself. He once said, “People sometimes forget that they are very unique… The whole computer industry wants to forget about the humanist side.” The speech was a reminder that he hadn’t.The Steve Jobs Archive now preserves that legacy with rare artifacts, including Jobs’ handwritten speech drafts, his Reed College acceptance letter, and even the Whole Earth Catalog that inspired his famous closing line.",Steve jobs stanford speech is one of the most watched speeches in history. Apple ceo tim cook recently marked the 20th anniversary of steve jobs’ iconic 2005 stanford commencement address by sharing a tribute to the late apple co-founder on social media.,"https://static.toiimg.com/thumb/msid-121819600,width-1070,height-580,imgsize-28310,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
 Jeff Bezos and Lauren Sanchez wedding on a 'budget'? Know why they may dial back the bling,https://timesofindia.indiatimes.com/technology/tech-news/jeff-bezos-and-lauren-sanchez-wedding-on-a-budget-know-why-they-may-dial-back-the-bling/articleshow/121785696.cms,"Jeff Bezos and Lauren Sanchez are planning their wedding in Venice. Initially, a grand celebration was expected. However, after criticism of Blue Origin's spaceflight, they are considering a smaller event. The venue might be Fondazione Giorgio Cini. This location offers discretion and majesty. The couple aims for simplicity. They want to avoid appearing extravagant. The wedding will still have luxury.","Jeff bezos and lauren sanchez are planning their wedding in venice. Initially, a grand celebration was expected. However, after criticism of blue origin's spaceflight, they are considering a smaller event. The venue might be fondazione giorgio cini.","https://static.toiimg.com/thumb/msid-121785782,width-1070,height-580,imgsize-38808,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-Google offers buyouts to employees who 'aren't feeling excited about …,https://timesofindia.indiatimes.com/technology/tech-news/google-offers-buyouts-to-employees-who-arent-feeling-excited-about-/articleshow/121775407.cms,"Google is offering buyouts to thousands of U.S. employees across divisions like Search and core engineering, aiming to cut costs amidst significant AI investments. This ""Voluntary Exit Program"" targets those feeling misaligned or struggling to meet expectations.","Google is offering buyouts to thousands of u.s. employees across divisions like search and core engineering. The company is aiming to cut costs amidst significant ai investments. This ""voluntary exit program"" targets those feeling misaligned or struggling to meet expectations.","https://static.toiimg.com/thumb/msid-121775350,width-1070,height-580,imgsize-25550,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+Google Cloud Outage: Google services fully restored after widespread Cloud outage: Here’s what the company said,https://timesofindia.indiatimes.com/technology/tech-news/google-services-fully-restored-after-widespread-cloud-outage-heres-what-the-company-said/articleshow/121815557.cms,"Reason behind Google Cloud outage
+
+Google Cloud services completely restored: Here’s what the company said
+
+Google has announced the full restoration of its cloud services and associated platforms following a significant global outage that impacted numerous Google products and third-party applications late night on June 12. The disruption, which stemmed from an issue within Google Cloud, caused widespread accessibility problems for tens of thousands of users worldwide. Google Cloud acknowledged the problem on its status page, stating that multiple products were experiencing varying levels of service disruption. ""Our engineers are continuing to mitigate the issue, and we have confirmation that the issue is recovered in some locations,"" Google Cloud said, though it could not provide a timeline for full resolution.The outage began early Thursday (June 12), leading to elevated error rates and complete unavailability for services such as Google Search, Google Meet, Google Lens, and various Google Workspace applications including Gmail, Google Drive, and Google Calendar. Beyond Google's own ecosystem, popular third-party platforms like Spotify and Discord, which rely on Google Cloud infrastructure, also reported extensive downtime.Google Cloud engineers identified the root cause of the disruption, which was attributed to an identity and access management (IAM) failure within Google Cloud's systems. This misconfiguration triggered a cascade of issues across critical cloud components.Google confirmed that it had applied appropriate mitigations and was seeing signs of widespread recovery. ""Our engineers have identified the root cause and have applied appropriate mitigations,"" Google Cloud stated on its status page.“All the services are fully recovered from the service issue. We will publish analysis of this incident once we have completed our internal investigation. We thank you for your patience while we worked on resolving the issue,” added the company.","Google has announced the full restoration of its cloud services and associated platforms following a significant global outage. The disruption, which stemmed from an issue within google cloud, caused widespread accessibility problems for tens of thousands of users worldwide.","https://static.toiimg.com/thumb/msid-121815537,width-1070,height-580,imgsize-37126,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
 Paytm stock price today: One 97 Communications shares crash 10% on FinMin's statement on UPI transactions,https://timesofindia.indiatimes.com/business/india-business/paytm-stock-price-today-paytm-shares-crash-10-after-finance-ministry-dismisses-mdr-on-upi-transactions/articleshow/121794025.cms,"NEW DELHI: Paytm on Thursday tumbled as much as 10% on Thursday hitting an intraday low of Rs 864.40 on BSE Sensex, after the finance ministry clarified that there are no plans to introduce a Merchant Discount Rate (MDR) on UPI transactions.As of 10 am, Paytm was trading 6% lower, underperforming the broader NSE Nifty 50, which was down just 0.14%. This marks Paytm's steepest single-day drop since February 2024, as investor sentiment took a hit following the official denial.The sharp fall in the stock price of One 97 Communications, Paytm’s parent company, came after the finance ministry on Wednesday clarified that reports suggesting MDR charges on UPI payments were ""false, baseless, and misleading.""""Speculation and claims that the MDR will be charged on UPI transactions are completely false, baseless, and misleading. Such baseless and sensation-creating speculations cause needless uncertainty, fear and suspicion among our citizens. The Government remains fully committed to promoting digital payments via UPI,"" Finance ministry wrote on X.The clarification came after some media reports suggested the government was considering levying MDR on UPI transactions only for large merchants to support banks and payment providers.Earlier in March, the Payments Council of India (PCI), which represents over 180 digital payment firms, urged the government to reconsider the introduction of merchant discount rate (MDR) on UPI transactions and RuPay debit cards.The industry body has sought an MDR of 0.3% on UPI transactions only for large merchants and a nominal MDR on RuPay debit cards for all merchants.The council warned that without MDR, the digital payments infrastructure could become unsustainable, affecting innovation, cybersecurity, and customer support.PCI argued that the policy, in place since January 2020, has put pressure on the payment ecosystem, despite a Rs 1,500 crore government incentive that falls far short of the estimated Rs 10,000 crore needed annually. Members of PCI include major players like Amazon Pay, PhonePe, Paytm, and Razorpay.",Paytm tumbled as much as 10% on thursday hitting an intraday low of rs 864.40 on bse sensex. The finance ministry clarified that there are no plans to introduce a merchant discount rate (mdr) on upi transactions.,"https://static.toiimg.com/thumb/msid-121794451,width-1070,height-580,imgsize-35886,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
 Tesla robotaxi launch in Austin: Elon Musk sets 'tentative date'; says 'we are being super paranoid about safety',https://timesofindia.indiatimes.com/business/international-business/tesla-robotaxi-launch-in-austin-elon-musk-sets-tentative-date-says-we-are-being-super-paranoid-about-safety/articleshow/121766446.cms,"Billionaire Elon Musk announced on Tuesday that the electric vehicle manufacturing giant Tesla is ""tentatively"" set to begin its long-awaited robotaxi service in Austin, Texas, on June 22.Sharing a post on social media platform X, Musk said the launch would take place in Austin, calling the timeline ""tentatively, June 22.""""We are being super paranoid about safety, so the date could shift,"" Musk added.The announcement marks a major step in Tesla's autonomous driving plans. If the rollout happens as planned, it would mark a major milestone in Tesla's Full Self-Driving (FSD) program—a technology that has faced years of delays and criticism.Musk also revealed that the first Tesla to fully ""drive itself from the factory end of line all the way to a customer house is June 28.""Earlier, Musk responded to a video on X showing what appears to be one of Tesla's first robotaxis in Austin, a Model Y carrying a passenger with no driver behind the wheel.The car had a ""Robotaxi"" logo on its side.""These are unmodified Tesla cars coming straight from the factory, meaning that every Tesla coming out of our factories is capable of unsupervised self-driving!"" Musk wrote on X.Investors, analysts, and Tesla fans have been closely watching for this moment since Musk said earlier this year that the robotaxi service would launch in Austin sometime in June.In an interview with CNBC last month, Musk outlined initial plans for the service, stating that the vehicles would operate under remote supervision and ""geofenced"".He indicated plans to begin with approximately 10 vehicles, with rapid expansion planned for other metropolitan areas including Los Angeles, San Antonio and San Francisco.Musk has spent years promising fully self-driving Teslas “next year,” but now the pressure is real as the company begins rolling out its robotaxi service. Tesla's electric vehicle sales have recently dipped, hit by rising competition, the revamp of its popular Model Y, and the backlash from Musk’s political statements.The Austin launch coincides with a reported clash between Musk and US President Donald Trump over tax policy. Some analysts worry this could lead to more scrutiny from federal safety regulators if problems arise with the robotaxis.Still, Wall Street remains hopeful. Earlier, analyst Dan Ives of Wedbush called the launch the ""start of Tesla’s autonomous future and a new growth chapter.""","Billionaire elon musk announced on tuesday that the electric vehicle manufacturing giant tesla is ""tentatively"" set to begin its long-awaited robotaxi service in austin, texas, on june 22. Musk also revealed that the first tesla to fully ""drive itself from the factory end of line all the way to a customer house is june 28""","https://static.toiimg.com/thumb/msid-121767389,width-1070,height-580,imgsize-43410,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-PhonePe sells 5% in CE Info for 486cr,https://timesofindia.indiatimes.com/business/india-business/phonepe-sells-5-in-ce-info-for-486cr/articleshow/121812159.cms,"Representative image
+"Gold price prediction today: What's the gold rate outlook for June 13, 2025 after Israel strikes Iran",https://timesofindia.indiatimes.com/business/india-business/gold-price-prediction-today-whats-the-gold-rate-outlook-for-june-13-2025-should-you-buy-or-sell-mcx-gold-israel-iran-strike/articleshow/121819726.cms,"Gold price prediction: The ₹99,000 level, coinciding with the 21-day EMA, represents the most logical support zone for dip buying in this new bullish environment. (AI image)
 
-NEW DELHI: Digital payments major PhonePe on Thursday trimmed its holding by selling a 5% stake in CE Info Systems, the parent company of MapmyIndia, for Rs 486 crore through an open market transaction. PhonePe is an arm of Walmart-controlled online retailer Flipkart Following stake sale, shares of CE Info Systems plunged 9.4% to settle at Rs 1,769 apiece on BSE. According to bulk deal data available on the BSE, PhonePe offloaded 27.2 lakh shares, amounting to 5% stake in CE Info Systems. The shares were sold at an average price of Rs 1,786 apiece, taking the transaction value to Rs 486 crore. After the latest transaction, PhonePe's holding in CE Info Systems declined to 13.7% from 18.7%.","Phonepe is an arm of walmart-controlled online retailer flipkart. Following stake sale, shares of ce info systems plunged 9.4% to settle at rs 1,769 apiece on bse. Phonepe's holding in ce info systems declined to 13.7% from 18.7%.","https://static.toiimg.com/thumb/msid-121812168,width-1070,height-580,imgsize-497549,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-"Orkla India files for IPO, no fresh issue",https://timesofindia.indiatimes.com/business/india-business/orkla-india-files-for-ipo-no-fresh-issue/articleshow/121812152.cms,"Representative image
+Here's the analysis from Jateen Trivedi, VP Research Analyst - Commodity and Currency, LKP Securities:
 
-BENGALURU: Orkla India, formerly known as MTR Foods, filed its draft red herring prospectus (DRHP) with Sebi for an initial public offer (IPO) consisting entirely of an offer for sale of up to 2.2 crore equity shares. There is no fresh issue component in the proposed IPO.Its heritage brand, MTR Foods, spans 100 years of serving authentic Indian cuisine.According to the DRHP filed, the offering will consist of secondary share sales by the company's promoter and shareholders. The promoter entity, Orkla Asia-Pacific, will offload up to 2 crore shares, while existing shareholders Navas Meeran and Feroz Meeran will each sell up to 11.4 lakh shares. Orkla India was rebranded from MTR Foods following restructuring and internal mergers.","Orkla india, formerly known as mtr foods, filed its draft red herring prospectus (drhp) with sebi for an initial public offer (ipo) there is no fresh issue component in the proposed ipo. Orkla asia-pacific will offload up to 2 crore shares, while existing shareholders navas and feroz meeran will sell up to 11.4 lakh shares.","https://static.toiimg.com/thumb/msid-121812155,width-1070,height-580,imgsize-491817,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-Auto tariffs not safeguard measures: US,https://timesofindia.indiatimes.com/business/india-business/auto-tariffs-not-safeguard-measures-us/articleshow/121812133.cms,"This is an AI-generated image, used for representational purposes only.
+Technical Transformation After Gap Opening
 
-NEW DELHI: The US has told WTO that tariffs on automobiles and auto components are not safeguard measures and there is no basis for India to seek consultations on the matter.Earlier this month, India sought consultations with the US under the WTO safeguard agreement over American tariffs on auto and auto parts.However, the US said it is open to discuss the issues with India. On March 26, 2025, the US adopted a measure in form of a tariff increase of 25% ad valorem on imports of passenger vehicles and light trucks, and on some auto parts originating in or from India, a communication sent by India to the WTO has said.","The us has told wto that tariffs on automobiles and auto components are not safeguard measures. Earlier this month, india sought consultations with the us under the wto safeguard agreement over american tariffs on auto and auto parts. The us said it is open to discuss the issues with india.","https://static.toiimg.com/thumb/msid-121812138,width-1070,height-580,imgsize-1127349,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-KYC update pain may ease as RBI rejigs rules,https://timesofindia.indiatimes.com/business/india-business/kyc-update-pain-may-ease-as-rbi-rejigs-rules/articleshow/121812125.cms,"Representative image
+Previous Close: ₹98,400
 
-MUMBAI: RBI has eased KYC norms to simplify compliance and to make it easier for individuals to access long-dormant bank accounts and unclaimed deposits, many of which have remained untouched for over 10 years.The move, announced through a circular on June 12, aims to ensure that anti-money laundering rules do not hinder rightful account holders from accessing their savings particularly in accounts opened to receive government benefits.RBI has asked banks to give three advance intimations prior to the due date of periodic updation of KYC and at least one intimation must be by letter. In the past customers have complained that digital alerts have been missed and they only come to know when they are not able to transact on their account.The central bank has also asked banks to allow KYC updates at any branch, irrespective of where the account was opened. It has also permitted the use of Aadhaar OTP and video-based customer identification for periodic KYC updates. Business correspondents, especially in rural areas, can now assist customers with reactivating inoperative accounts and completing KYC requirements.According to RBI, banks must take an 'empathetic view' when dealing with low-risk customers seeking to update their KYC or reactivate dormant accounts.Customers with no changes in personal information, or only a change of address, can now submit self-declarations through digital or offline channels, without the need for additional documents.Banks have been directed to organise KYC update camps, especially in rural and semi-urban areas, and to launch focused campaigns in branches with a high number of pending updates. These efforts are particularly targeted at accounts linked to direct benefit transfers and Jan Dhan accounts, where KYC compliance has lagged.According to Anand Bajaj, founder MD & CEO of PayNeary, allowing business correspondents to collect self-declarations and assist with biometric-based e-KYC, will allow banks to efficiently reach customers in areas with limited branches.","The move aims to ensure that anti-money laundering rules do not hinder rightful account holders from accessing their savings. The central bank has also asked banks to allow kyc updates at any branch, irrespective of where the account was opened.","https://static.toiimg.com/thumb/msid-121812132,width-1070,height-580,imgsize-1412212,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+Gap Up Opening: ₹100,300 (+1,800 points) The massive gap up has completely altered the technical landscape:
+
+Price has decisively broken above all previous resistance levels
+
+Moving averages are now acting as support rather than resistance
+
+RSI has moved into overbought territory but shows strong momentum
+
+MACD histogram is showing explosive positive momentum
+
+Key Technical Recalibration Intraday:
+
+EMA 8: ₹99,500 (now strong support)
+
+EMA 21: ₹98,800 (primary support zone for dip buying)
+
+RSI (14): 84.72 (overbought but trending higher)
+
+MACD: Massive positive divergence with histogram at 84.74
+
+Bollinger Bands: Price trading well above upper band, indicating strong momentum
+
+Primary Strategy: Buy Gold on Dips Near ₹99,000
+
+Strategic Foundation:
+
+Entry Parameters:
+
+Primary Buy Zone: ₹98,900-99,100
+
+Optimal Entry: ₹99,000
+
+Stop Loss: ₹98,600 (below EMA 21 with buffer)
+
+Target 1: ₹100,000
+
+Target 2: ₹100,500 (psychological level)
+
+Risk-Reward Analysis:
+
+Maximum Risk: 400 points (from ₹99,000 to ₹98,600)
+
+Minimum Reward: 1,000 points (to ₹100,500)
+
+Risk-Reward Ratio: 1:3 (Exceptional for momentum trades)
+
+Stop Loss Management:
+
+Initial Stop: ₹98,600 (strict discipline required)
+
+Trailing Stop: Move to breakeven after 50% of Target 1 achieved
+
+Profit Protection: Secure 75% profits at Target 2
+
+Conclusion
+
+(Disclaimer: Recommendations and views on the stock market and other asset classes given by experts are their own. These opinions do not represent the views of The Times of India)
+
+Gold price prediction today: MCX Gold August 2025 contract has opened with a spectacular gap up at ₹100,300, marking a massive surge of over 1,800 points from previous levels. This dramatic move is likely triggered by overnight geopolitical tensions on Israel attacks on Iran Nuclear sites. Dollar weakness at 98$, has created a new bullish paradigm for the precious metal. While the gap up presents immediate profit opportunities, seasoned traders are positioning for strategic buy-on-dips entries.The ₹99,000 level, coinciding with the 21-day EMA, represents the most logical support zone for dip buying in this new bullish environment. This level offers multiple confluence factors:1. EMA 21 Support: The 21-period moving average at ₹99,000 provides dynamic support2. Psychological Level: Round number support with strong psychological significance3. Gap Fill Protection: Sufficient distance from gap opening to avoid immediate fill4. Volume Profile: High volume acceptance above ₹99,000 during previous sessions5. Fibonacci Support: 50% retracement of recent rally from ₹97,500 to current levelsThe gap up opening in gold has created a paradigm shift from resistance-based selling to support-based buying strategies. The ₹99,000 level offers an exceptional risk-reward opportunity for traders looking to capitalize on this momentum breakout. However, the elevated volatility demands disciplined execution and strict adherence to risk management protocols.The technical setup strongly favors buyers on any weakness, with multiple confluence factors supporting the ₹99,000 zone. Traders should remain patient, wait for the market to come to them, and execute the strategy with precision when the opportunity presents itself.","Gap up opening in gold has created a paradigm shift from resistance-based selling to support-based buying strategies. Mcx gold august 2025 contract has opened with a spectacular gap up at ₹100,300, marking a massive surge of over 1,800 points from previous levels.","https://static.toiimg.com/thumb/msid-121819799,width-1070,height-580,imgsize-62694,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+"Rs 2,000 denomination fake currency notes dip, but Rs 500 counterfeit notes spike in FY25",https://timesofindia.indiatimes.com/business/india-business/rs-2000-denomination-fake-currency-notes-dip-but-rs-500-counterfeit-notes-spike-in-fy25/articleshow/121837098.cms,"Chennai: Dip in Rs 2,000 denomination counterfeit notes contributed to the reduction in the value of fake banknotes detected by banks and Reserve Bank, but there was a rise in Rs 500 Fake Indian Currency Notes (FICN) during FY25, RBI data showed. Banknotes of Rs 2,000 denomination were withdrawn from circulation in May 2023, though it continues to be legal tender.The counterfeit notes detected in the denominations of Rs 10, Rs 20, Rs 50, Rs 100 and Rs 2,000 declined in 2024-25, while those in Rs 200 and Rs 500 denominations increased by 13.9% and 37.3%, respectively, when compared with the previous year (FY24). A total number of 2,17,396 FICNs was detected by banks and Reserve Bank in FY25, recording a marginal drop by 2.3% in FY24 at 2,22,639 FICNs. However, it does not include counterfeit notes seized by the police and other enforcement agencies, India's central bank said in its annual report for 2024-25.According to data, Rs 500 FICNs increased from 85,722 in FY24 to 1,17,727 in FY25. Its value rose from around Rs 4.3 crore to Rs 5.9 crore, respectively. Subsequently, the number of Rs 2,000 denomination counterfeit notes plunged by 86.5% YoY at 3,508 in FY25 from 26,035 in FY24.Its value decreased to Rs 70 lakh in FY25 from Rs 5.2 crore in FY24. Further, 32,660 numbers of Rs 200 FICNs and 51,069 in the Rs 100 denomination were detected in the last fiscal (FY25). Out of the total FICNs detected in the banking sector in 2024-25, 95.3% was detected by banks and the rest 4.7% was detected at the Reserve Bank.The report said, a Currency Research and Development Centre (CRDC) has been set up under the administrative control of Bharatiya Reserve Bank Note Mudran (BRBNMPL) for conducting advanced testing of security features of Indian banknotes, counterfeit deterrence tests, forensic/scientific analysis of forged notes, ethical counterfeiting of notes by using latest available tools and technologies and for the development of security/design features for Indian banknotes.Former president of Bank Employees Federation of India C J Nandakumar said, the rise in Rs 500 FICNs indicates the circulation of counterfeit notes. “Criminals have become sophisticated in designing fake notes with features that even escape from being identified by sorting machines. Apart from issuing guidelines, the regulator must also initiate more stringent actions and supervise to end the menace of FICNs,” he added.","Banknotes of rs 2,000 denomination were withdrawn from circulation in may 2023. A total number of 2,17,396 ficns was detected by banks and reserve bank in fy25. However, it does not include counterfeit notes seized by the police and other enforcement agencies.","https://static.toiimg.com/thumb/msid-121837098,width-1070,height-580,imgsize-null,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+Rakesh Jhunjhunwala family fully exits Nazara Technologies,https://timesofindia.indiatimes.com/business/india-business/rakesh-jhunjhunwala-family-fully-exits-nazara-technologies/articleshow/121835474.cms,"BENGALURU: The family of late investor Rakesh Jhunjhunwala has fully exited its stake in Nazara Technologies through open market transactions on Friday..According to stock exchange disclosures, Rekha Rakesh Jhunjhunwala, executor to the estate of late Rakesh Jhunjunwala, sold 27.2 lakh shares, worth Rs 333.8 crore, through bulk deals in the open market executed on both the NSE and BSE.Prior to that, the estate sold 17.2 lakh shares of the company stock through June 9th to 12th. With the deals combined, the Jhunjhunwala family no longer holds any stake in the gaming and esports firm.Nazara Technologies, which went public in March 2021, operates across multiple segments including mobile gaming, esports, and gamified learning. The company has expanded its presence beyond India into markets such as North America, the Middle East, and Africa.Jhunjhunwala, who passed away in August 2022, had built a significant position in Nazara Technologies post-IPO. Jhunjhunwala had first put Rs 180 crore in the Mumbai-based company in 2017.Nazara Technologies has completed multiple acquisitions in 2025 so far. In January, it acquired two mobile game titles from ZeptoLab for $7.7 million. In May, it acquired UK-based game publisher Curve Games for Rs 247 crore. During the same month, its subsidiary Sportskeeda acquired two wrestling news platforms from Titan Insider Digital in an all-cash transaction valued at Rs 10.5 crore.","The family of late investor rakesh jhunjhunwala has fully exited its stake in nazara technologies. The family sold 27.2 lakh shares, worth rs 333.8 crore, through bulk deals in the open market executed on both the nse and bse.nazara technologies went public in march 2021 and operates across multiple segments including mobile gaming, esports, and gamified learning.","https://static.toiimg.com/thumb/msid-121835561,width-1070,height-580,imgsize-710858,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+"Tesla price hike: Elon Musk-led EV maker raises Model S and X prices by $5,000 in US after upgrades; premium variants now start at $84,990",https://timesofindia.indiatimes.com/business/international-business/tesla-price-hike-elon-musk-led-ev-maker-raises-model-s-and-x-prices-by-5000-in-us-after-upgrades-premium-variants-now-start-at-84990/articleshow/121833038.cms,"Tesla has increased prices of its Model S and Model X vehicles in the United States by $5,000 following an update to the two premium electric models, the company announced Thursday via a post on X and updates to its official website.The price hike applies to all configurations of both models. With the adjustment, the dual-motor all-wheel drive (AWD) version of the Model S now starts at $84,990, while the high-performance Plaid variant is priced at $99,990. Similarly, the Model X AWD now costs $89,990, and the Model X Plaid is listed at $104,990, Reuters reported.Earlier, Elon Musk announced Tuesday that Tesla is ""tentatively"" launching its long-anticipated robotaxi service in Austin, Texas, on June 22. The move marks a significant leap in Tesla’s autonomous driving ambitions, with Musk emphasizing a cautious approach: “We are being super paranoid about safety, so the date could shift,” he said in a post on social media platform X.Musk also noted that the first Tesla to fully self-drive from the end of the production line to a customer’s home is scheduled for June 28—an industry-first if achieved.The vehicles involved in the rollout are reportedly unmodified Tesla Model Ys, built with the Full Self-Driving (FSD) software pre-installed and capable of operating without human intervention.A recent video circulating online showed a Model Y in Austin, branded with a “Robotaxi” logo, transporting a passenger without a driver onboard. Musk confirmed the footage, stating that ""every Tesla coming out of our factories is capable of unsupervised self-driving. ""This announcement brings Tesla closer to fulfilling a promise Musk has been making for years—commercializing fully autonomous vehicles. The initial rollout will reportedly include around 10 vehicles, operating under remote supervision and within a geofenced area. Musk said the service will quickly expand to other metro areas including Los Angeles, San Antonio, and San Francisco.","Tesla has increased prices of its model s and model x vehicles in the united states by $5,000. The price hike applies to all configurations of both models. With the adjustment, the dual-motor all-wheel drive (awd) version of the model s now starts at $84,990.","https://static.toiimg.com/thumb/msid-121833059,width-1070,height-580,imgsize-786763,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+Air India plane crash: Boeing CEO cancels Paris Air Show trip; to focus on investigation after first Dreamliner 787-8 crash,https://timesofindia.indiatimes.com/business/international-business/air-india-plane-crash-boeing-ceo-cancels-paris-air-show-trip-to-focus-on-investigation-after-first-dreamliner-787-8-crash/articleshow/121826743.cms,"Following the Air India Dreamliner 787-8 crash in Ahmedabad, Boeing CEO Kelly Ortberg has cancelled his attendance at the Paris Air Show to concentrate on the investigation. The incident, the first fatal one involving a 787, caused Boeing's shares to drop.","Boeing ceo kelly ortberg has cancelled his attendance at the paris air show to concentrate on the investigation. The incident, the first fatal one involving a 787, caused boeing's shares to drop. The air india dreamliner 787-8 crash in ahmedabad, india, killed all on board.","https://static.toiimg.com/thumb/msid-121826836,width-1070,height-580,imgsize-88208,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
 "Micron raises US chip investment to $200 billion, adds new Idaho plant, aims to capture 10% global share with Trump backing",https://timesofindia.indiatimes.com/business/international-business/micron-raises-us-chip-investment-to-200-billion-adds-new-idaho-plant-aims-to-capture-10-global-share-with-trump-backing/articleshow/121808368.cms,"US semiconductor giant Micron Technology on Thursday announced it is expanding its domestic investment to $200 billion, supported by the Trump administration, in a major push to strengthen America’s chip manufacturing and supply chain resilience.The revised plan includes an additional $30 billion over previous commitments and features the construction of a second cutting-edge memory chip fabrication facility in Boise, Idaho. The Idaho-based firm said the broader investment will allocate $150 billion for manufacturing and $50 billion for R&D over the coming years, generating an estimated 90,000 direct and indirect jobs across several US states, AFP reported.The move aligns with the Trump administration’s push to secure large-scale investments from technology firms and revive US industrial capacity. Trump has repeatedly urged companies to expand domestic manufacturing and has warned of steep tariffs on imports to spur local production.Micron’s announcement also includes modernization of its existing plant in Manassas, Virginia, and the addition of end-to-end High Bandwidth Memory (HBM) manufacturing in the US—critical to national defense and AI applications.The investment drew praise from major US tech leaders. Nvidia CEO Jensen Huang called it “an important step forward for the AI ecosystem,” while Apple’s Tim Cook said it was “another great example of American manufacturing leadership.”Micron aims to raise the US share of global memory chip production from near zero to 10% over the next decade.",Us semiconductor giant micron technology on thursday announced it is expanding its domestic investment to $200 billion. The revised plan includes an additional $30 billion over previous commitments and features the construction of a second cutting-edge memory chip fabrication facility in idaho.,"https://static.toiimg.com/thumb/msid-121808828,width-1070,height-580,imgsize-1468641,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
 1.14 lakh startups generate more than 12 lakh jobs in India: Finance ministry,https://timesofindia.indiatimes.com/business/startups/trend-tracking/1-14-lakh-startups-generate-more-than-12-lakh-jobs-in-india-finance-ministry/articleshow/107262154.cms,"Finance Ministry
 
 NEW DELHI: More than 1.14 lakh startups in India have created over 12 lakh jobs so far, the finance ministry said in its latest review of the Indian economy .In the report titled, ‘The Indian Economy: A Review January 2024’, the Department of Economic Affairs said that the 1.14 lakh startups recognised by the government under the 'Startup India initiative’ created more than 12 lakh jobs (as of October 2023).The state-owned e-commerce platform Open Network for Digital Commerce (ONDC) clocked more than 63 lakh transactions till November 2023, the document read.Despite facing global challenges in 2023 like valuation issues, few IPOs, regulatory changes and macroeconomic and geopolitical trends, India remains the third largest tech start-up ecosystem globally, with over 950 tech startups founded last year.The cumulative funding for more than 31,000 tech start ups has exceeded $70 billion (from 2019 to 2023), according to a recent report by Nasscom in collaboration with Zinnov.“In 2023, despite facing global economic and regulatory challenges, Indian tech startups have prioritised the imperative of enhancing their business fundamentals, driving profitability and growth,” said Debjani Ghosh, President, Nasscom.“The proliferation of tech startups in tier 2 and 3 cities marks the ecosystem's resilience,” she added.Navigating 2024, tech startup founders expect to continue the revenue growth path with measured steps focusing on optimising expenditure and maximising profitability for B2B tech startups.Investments in deeptech will continue an upward trend in 2024. With generative AI (GenAI) acceleration, 70 per cent of start-up founders are embedding artificial intelligence (AI) in their solutions.As funding becomes scarce for the Indian startup ecosystem in general, the explosion of Artificial Intelligence (AI) has given a new lease of life to entrepreneurs and founders in the country, as the Centre extends support to the sector.","The state-owned e-commerce platform open network for digital commerce clocked more than 63 lakh transactions till november 2023. India remains the third largest tech start-up ecosystem globally, with over 950 tech startups founded last year. The cumulative funding for more than 31,000 tech start ups has exceeded $70 billion (from 2019 to 2023)","https://static.toiimg.com/thumb/msid-107262111,width-1070,height-580,imgsize-64556,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-Startups Revolutionizing Carbon Dioxide into Valuable Products,https://timesofindia.indiatimes.com/business/startups/global/startups-revolutionizing-carbon-dioxide-into-valuable-products/articleshow/106920179.cms,"For most perfume makers, ingredients to make it smell great are the most important feature. But for Stafford Sheehan, a cofounder and chemist at Air Company, the most important part of perfume-making has no scent at all.New York-based Air Company uses technology that converts planet-warming carbon dioxide into ethanol, which is then blended with essential oils and water to produce perfume. While the pale yellow-color Air Eau de Parfum is about 50% more expensive than Coco Chanel’s signature No. 5, Sheehan says his product is uniquely valuable: Every 50-milliliter bottle uses 3.6 grams of CO2 that otherwise would have been released into the atmosphere. Its package reads: “Turning CO2 into something beautiful.”While the volume of CO2 utilized in the bottle is extremely small, Air Company’s perfume showcases one way the coming wave of captured carbon can be put to use. Renewable energy and electric cars alone won’t be enough to cut CO2 emissions to zero. The world will almost certainly need to capture billions of tons of the gas annually in the coming decades. Large amounts will likely be stored underground. Using it — so-called carbon capture and utilization, or CCU — to create new products from perfume to jet fuel could be an important tool in the fight against climate change , too, though the nascent industry has major hurdles to overcome.Roughly 230 million tons of CO2 are utilized every year, according to a 2019 report by the International Energy Agency. While roughly one-third of that is reused to force more oil from the ground — hardly a carbon-neutral process — CCU advocates say that the number of companies coming up with new uses for carbon has mushroomed in recent years, paving a way to unlock climate benefits. Carbon-derived fuels and chemicals, for example, could theoretically grow to the scale of billions of tons of CO2 use per year if companies could perfect their technology and lower costs.Calgary-based CleanO2 transforms CO2 captured from building heating boilers into feedstock to make soap. Newlight Technologies, a biotechnology startup based in California, takes carbon pulled directly from the air and turns it into biodegradable plastics. Germany’s Covestro AG, one of the world’s largest polymer manufacturers, is also switching some of its fossil fuel-based feedstocks to carbon-derived materials for everything ranging from car shells to medical devices and stadium roofs.Most companies working on CO2-sequestering products are still in their infancy. To grow the emerging sector, global venture capitalists in 2022 poured nearly $500 million into carbon utilization businesses, according to the IEA. That’s in stark contrast to 2015, when barely any venture money went to technologies that utilize CO2.“It’s just a whole different landscape today than it was a decade ago,” says Sasha Mackler, executive director of the energy program at Washington, DC-based non-profit Bipartisan Policy Center.Jennifer Holmgren, chief executive officer of LanzaTech Global Inc., has experienced the shifting sentiment firsthand. The Illinois-based company uses a carbon-eating bacteria – discovered in the guts of rabbits and preserved as powder – to make alternative ethanol in bioreactors not dissimilar to how breweries ferment beer. In the early 2010s, when Holmgren touted carbon-derived ethanol to prospective customers, her sales pitch was met with skepticism.But the tide began turning later that decade. In 2018, the company’s jet fuel produced from the emissions of a Chinese steel mill helped power a Transatlantic flight. LanzaTech has also inked agreements with airlines including Japan’s All Nippon Airways to supply CO2-derived jet fuel. And LanzaJet, the company’s spin-off, plans to start producing sustainable jet fuels at a commercial scale this year.Yet for all the hype around sustainable aviation fuel (SAF) using captured carbon, the industry is still an extremely small player. Almost every major airline in the world has pledged to use at least 10% sustainable jet fuels by 2030, yet SAF makes up only 0.1% of global aviation fuel supply — and much of it is made from sources other than captured CO2, such as used cooking oil.“There’s a lot more interest because consumers have become much more interested in buying things that are lower carbon,” says Holmgren. That’s enabled LanzaTech to expand the number of products that utilize CO2.American plastic container maker Plastipak, for instance, has partnered with LanzaTech to produce carbon-derived packaging materials, while polyester converted from LanzaTech’s ethanol has replaced its petroleum-based counterpart at a pilot scale in Lululemon shorts, Zara dresses, H&M yoga pants, On running shoes and Craghoppers jackets. Like SAF, though, there’s still a long way to go for CO2-derived polyester to reach meaningful levels of use.Momentum to grow beyond one-off products and low-scale production has also been supercharged by a growing array of regulations and incentives around the world. For instance, the Inflation Reduction Act that US President Joe Biden signed in 2022 raised the tax credit for carbon capture and utilization by more than 70% to $60 per metric ton in an effort to make costly projects more financially appealing.To keep the climate within habitable limits, the IEA estimates that carbon capture will have to grow to 7.6 billion tons of CO2 annually by mid-century. CCU will play a role, though just how big remains to be seen. Not every use case is created equal and some approaches, such as dissolving compressed CO2 in water to make carbonated beverages, only store the gas temporarily. To quantify the true climate benefit of carbon utilization, experts say third-party verification is badly needed.The rise of CCU technology comes as another key approach in President Biden’s net-zero roadmap is hitting a bit of a wall. Carbon capture and storage — that is, gathering CO2 as it’s released from a coal-fired power plant or other emissions source and sequestering it underground — has faced challenges because carbon is often captured in one place and stored in another. That requires pipelines to transport the gas, which many local communities have opposed. Blackrock-backed Navigator, for example, recently announced it was scrapping a planned 1,300-mile CO2 pipeline.Carbon utilization companies say that they can sidestep that issue by using carbon near or at where it’s captured.At its 12-acre factory in Brooklyn, Glenwood Mason Supply demonstrates how. The concrete manufacturer takes CO2 captured at a residential building by its partner company, CarbonQuest, and uses a technique licensed from low-carbon concrete startup CarbonCure to convert the compressed carbon into a powder not unlike dry ice. It then injects it into industrial mixers. There, the CO2 meets cement, sand and aggregate, setting off a series of chemical reactions. The final result is concrete blocks with CO2 sealed in.The technique not only stores carbon but it can also make the blocks marginally stronger. The company estimates that it has utilized about 100 tons of CO2 in total since 2020. Even if the blocks break down, the stored carbon won’t be released as CO2 because it’s been mineralized.“Cement is a big offender in carbon emissions,” says Constance Cincotta, founder of the concrete factory. She became intrigued by the technology and its ability to lower her company's climate impact after hearing about it at an industry conference in the early 2010s. But it wasn't until CarbonCure came on the scene a few years ago that the prospect of CO2-storing cement became tangible. Glenwood Mason then sourced CO2 locally from CarbonQuest, which captures carbon from buildings in New York. Those factors have enabled large-scale production.While Cincotta’s intended to help the planet, she and her team discovered that sinking CO2 into concrete blocks is good for the business, too. In 2019, New York City — where the majority of the company’s concrete blocks are sold — passed a regulation requiring all buildings to shrink their carbon footprint 40% by the end of the decade. Glenwood Mason’s phones have been ringing ever since, with calls from architects and property developers who want to leverage their lower-carbon building materials to cut emissions, says Jeff Hansen, the company’s vice president in architectural sales and marketing.The factory’s CO2-storing concrete blocks also caught the eye of Amazon.com Inc, which in 2022 persuaded a real estate developer to purchase roughly 50,000 blocks for the construction of a new warehouse in New York that Amazon has leased. Had Glenwood Mason not sealed CO2 in its blocks, it wouldn’t have won the contract, Hansen says. To figure out how to pack more carbon into its products, the company has set up a laboratory in its factory to test the reaction between CO2 and other concrete feedstocks under different temperatures and humidity levels.But figuring out the right formula is only one consideration. Utilizing CO2 often comes with an additional cost. As the demand for CO2-derived products climbs, that green premium is expected to go down. Yet “it’s very hard to be a cost parity with a 100-year-old industry that doesn’t even have to pay for its externalities,” says Holmgren of LanzaTech. Even with economies of scale, Holmgren estimates that carbon-containing fabrics will still likely cost as much as 20% higher than conventional ones.“It’s unlikely that we will ever be a cost parity,” she says.In addition to the cost barrier, CCU companies also have to convince end users that may be suspicious of unproven new technologies.Changing feedstocks “does come with risks,” says Keith Wiggins, chief executive officer of Econic Technologies, a British startup that specializes in making carbon-derived chemicals. To get risk-averse industries onboard, Wiggins says his company is laser-focused on those that are under consumer pressure to change course.That strategy seems to be working. Econic has teamed up with three manufacturers in the US, China and India to produce mattresses, outdoor garments and building insulation materials that utilize CO2. The first batch of products using the company’s technology are scheduled to enter the market in 2024.For all the promise of the carbon utilization industry, it remains to be seen if it can challenge the status quo. While Air Company started selling carbon-derived perfume in 2021, the startup has yet to build its first commercial plant, Sheehan says, citing the time-consuming process needed for collecting data and fine-tuning the technology for large-scale production.Fow now, the company’s demonstration facility in New York City — where CO2 and hydrogen gas flow through tubes into a reactor to form chemical reactions, aided by catalysts made from a confidential mixture of metals — is designed to yield at least 10,000 gallons of CO2-derived liquid annually. The limited production capacity has left many orders for its perfume — as well as jet fuels and Air Vodka, another popular product made from CO2 — unfilled.“We need to scale these facilities to the size of oil refineries today in order to have the impact on climate change that we want to have,” Sheehan says.","New york-based air company uses technology that converts planet-warming carbon dioxide into ethanol. Carbon capture and utilization, or ccu, could be an important tool in the fight against climate change. But the nascent industry has major hurdles to overcome.","https://static.toiimg.com/thumb/msid-106921271,width-1070,height-580,imgsize-633411,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-E-commerce firm Udaan raises $340 million ahead of planned IPO,https://timesofindia.indiatimes.com/business/startups/companies/e-commerce-firm-udaan-raises-340-million-ahead-of-planned-ipo/articleshow/105991030.cms,"
-
-Stay informed with the latest business news, updates on bank holidays and public holidays.
-
-
-
-
-
-Indian e-commerce firm Udaan raised $340 million to strengthen its supply chain and boost vendor partnerships ahead of a stock market debut planned for 2025.The Series E round was done via a combination of fresh equity and conversion of debt, the Bangalore-based company said in a statement Thursday. The round was led by M&G Plc and existing investors including Lightspeed Venture Partners and DST Global participated.The round “fully funds our business plan,” Vaibhav Gupta, Udaan co-founder and chief executive officer, said in the statement. “It enables our continued journey of growth and profitability, positioning us well to be public-market ready in the next 12-18 months.”Udaan, which competes with Reliance Industries Ltd. and Walmart Inc.’s Flipkart in helping smaller merchants source their goods, runs an online marketplace and logistics networks that help mum-and-pop stores get quicker deliveries and cut traditional middlemen out. That kind of digital-led wholesale business, though a very small part of India’s overall retail market, is expected to swell to $150 billion in sales in a decade, according to McKinsey & Co.The startup targets an initial public offering in 2025, though it’s yet to decide whether it will do so in India or overseas, Gupta told Bloomberg News last month.Udaan was founded in 2016 by three engineers who previously worked at Flipkart. The trio together ran the company until Gupta, one of the founders, took over as CEO in 2021. The other two founders — Amod Malviya and Sujeet Kumar — are board members.",Indian e-commerce firm udaan raised $340 million to strengthen its supply chain. The series e round was done via a combination of fresh equity and conversion of debt. The bangalore-based company competes with reliance industries ltd. and walmart's flipkart.,"https://static.toiimg.com/thumb/msid-105991017,width-1070,height-580,imgsize-75644,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-Minuscule AI startup raises $41 million to tap India growth,https://timesofindia.indiatimes.com/business/startups/companies/minuscule-ai-startup-raises-41-million-to-tap-india-growth/articleshow/105804471.cms,"A generative artificial intelligence startup targeting the Indian market raised $41 million in fresh funding, the largest such round by an early-stage AI contender in the country.Sarvam AI is building large language models targeted at unique uses in Indian languages at price points that the country’s 1.4 billion people can afford. The Series A funding round was led by Lightspeed Venture Partners , and participants included Silicon Valley billionaire Vinod Khosla’s Khosla Ventures and Peak XV Partners , formerly Sequoia Capital India & Southeast Asia, Sarvam said Thursday.The Bangalore-based startup, until recently in stealth mode, was co-founded by Vivek Raghavan and Pratyush Kumar. It has ambitious plans to build open source foundational AI systems as well as tools for creating apps for the meager compute infrastructure available to developers in India. The startup has a total of 18 employees and is just opening an office in the city.""What we are showing is that you can build large language models with limited resources,” Raghavan said in a phone interview. ""We are building at a smaller scale and demonstrating that these can be extremely cost and energy efficient so they can be accessed by everyone.""Large language models, like OpenAI’s GPT-4 and Meta Platforms Inc.’s Llama, are powerful AI systems that understand by learning from vast amounts of diverse data from the internet and elsewhere to summarize, translate, and create text, audio and video for a wide range of applications. The rivalry to develop ever-more sophisticated models is heating up in Silicon Valley and such efforts have attracted billions of dollars in investments.","Sarvam ai is building large language models targeted at unique uses in indian languages. The bangalore-based startup, until recently in stealth mode, was co-founded by vivek raghavan and pratyush kumar. It has ambitious plans to build open source foundational ai systems.","https://static.toiimg.com/thumb/msid-105804461,width-1070,height-580,imgsize-22527,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-ZestMoney: ZestMoney set to shut operations this month,https://timesofindia.indiatimes.com/business/startups/companies/zestmoney-set-to-shut-operations-this-month/articleshow/105764280.cms,"NEW DELHI: Buy now Pay Later (BNPL) startup ZestMoney has decided to shut operations. The move will impact some 150 employees of the firm, the company's management told employees in a town hall on Tuesday. ZestMoney did not comment. It is learnt that the firm will shut down by the end of this month.The move comes after attempts by the Bengaluru-based startup to get acquired by larger peer PhonePe failed. The deal was called off earlier this year after a due diligence process undertaken by PhonePe, while evaluating the potential acquisition failed to meet its bar. The Walmart-owned fintech major had, however, hired some 130 of ZestMoney's employees.","The move will impact some 150 employees of the firm, the company's management told employees in a town hall on tuesday. It is learnt that the firm will shut down by the end of this month. The move comes after attempts by the bengaluru-based startup to get acquired by larger peer phonepe failed.","https://static.toiimg.com/thumb/msid-105775582,width-1070,height-580,imgsize-14308,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-Startups will play important role in helping India become 3rd largest economy: CEA Nageswaran,https://timesofindia.indiatimes.com/business/startups/companies/startups-will-play-important-role-in-helping-india-become-3rd-largest-economy-cea-nageswaran/articleshow/105332523.cms,"Chief Economic Advisor V Anantha Nageswaran
-
-THIRUVANANTHAPURAM: Startups will play an important role in helping India become the third largest economy in the world, Chief Economic Advisor ( CEA ) to the Union government V Anantha Nageswaran has said.Nageswaran said that tier-2 and 3 cities, including Kerala's capital, have become game-changers in helping startups flourish in the country due to improvements in infrastructure and supportive policies of the government, according to a KSUM release.The CEA, during his Leadership Talk on the concluding day of the Huddle Global 2023 organised by the Kerala Startup Mission (KSUM), said that India was the fifth largest economy on course to become the third largest in a few years.""In fact, I will say 7-in-7 is the buzz slogan, that is 7 trillion USD economy in seven years. Seven trillion USD economy size by 2030 is possible if India maintains its present growth trajectory, and in that journey startup entrepreneurs are going to play an important role,"" he is quoted as having said in the release.He was of the view that the active participation of startups in India in developing business models on the foundation of expanding physical and digital infrastructure will continue to generate efficiency, revenue and economic returns for the country.""The last decade has seen an exceptional transformation in the startup landscape in India, which has emerged as the third largest ecosystem globally, with over 1.12 lakh startups presently recognised by the Department for Promotion of Industry and Internal Trade (DPIIT) across 763 districts.""Among them, more than 110 are unicorns with a total valuation of around USD 350 billion,"" he said.The CEA further said that the country ranks second in innovation quality.He said that innovation in India was not just limited to certain sectors as startups were solving problems in 56 industrial sectors, with 13 per cent of them from IT services, nine per cent from health and life sciences, seven per cent from education, five per cent from agriculture and five per cent from food and beverages.Nageswaran also said it was significant that 49 per cent of the startups were from tier-2 and 3 cities which have turned to be game-changers as the business advantages in these locations enable entrepreneurs to operate at lower costs as compared to tier-1 cities.""Apart from improved infrastructure and the government's pro-active policies, the availability of a technically skilled talent pool is a huge advantage for startups to set up and flourish in tier-2 and tier-3 cities,"" he said.He said that historically there was a perception that small towns were difficult places to conduct business.""...but with improved internet penetration, vastly better physical infrastructure, road, rail and air connectivity and supportive government policies, this is no longer true,"" he said.He also noted Kerala's startup journey has been an inspiring one.The CEA said that KSUM has served as the catalyst since its establishment in 2006 to promote change that propelled the state into the forefront of the global startup arena.KSUM is the Kerala government's nodal agency established in 2006 for entrepreneurship development and incubation activities in the state.Nageswaran said that with over 4,000 registered tech startups, 63 incubators and 10 lakh square feet of incubation space, KSUM has not only met its goal of promoting technology-based entrepreneurship but has also earned the distinguished position of being among the world's top business incubators.The November 16-18 fifth edition of Huddle Global, India's biggest beachside startup conclave, was organised by KSUM at Adimalathura beach, near Vizhinjam, here.Attended by around 1,500 delegates, the event displayed sophisticated products from emerging sectors such as robotics, Artificial Intelligence , Machine Learning, Augmented Reality, Virtual Reality, life sciences, space tech, blockchain, IoT, e-governance, fintech, healthtech, agritech, edutech and SaaS from across the country.","Chief economic advisor v anantha nageswaran said tier-2 and 3 cities, including kerala's capital, have become game-changers in helping startups flourish in the country. He said that india was the fifth largest economy on course to become the third largest in a few years.","https://static.toiimg.com/thumb/msid-105332515,width-1070,height-580,imgsize-39018,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
